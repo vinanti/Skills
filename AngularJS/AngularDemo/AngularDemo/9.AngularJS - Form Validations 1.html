@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<script src="script/angular.js"></script>
+    <title>9.AngularJS - Form Validations 1</title>
+	<meta charset="utf-8" />
+	<style>
+    input.ng-invalid {
+		background-color: yellow;
+    }
+
+    input.ng-valid {
+		background-color: lawngreen;
+    }
+
+    form.ng-pristine {
+		background-color: aqua;
+    }
+
+    form.ng-dirty {
+		background-color: mediumaquamarine;
+    }
+    </style>
+</head>
+<body ng-app="">
+    <h1>AngularJS - Form Validations</h1>
+	<form name="myForm">
+		<h2>My Form</h2>
+		<input name="myName" ng-model="myName" placeholder="Enter your name" required />
+	</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS - Expressions</title>
+    <script src="script/angular.js"></script>
+    <style type="text/css">
+        .auto-style1{
+            width: 500px;
+        }
+        .auto-style2{
+            width: 124px;
+        }
+        #Text1{
+            width: 144px;
+        }
+        #Text2{
+            width: 144px;
+        }
+        #Text3{
+            width: 144px;
+        }
+        #Text4{
+            width: 57px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <div ng-app="">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">First name</td>
+                    <td>
+                        <input id="Text1" type="text" ng-model="FirstName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Last name</td>
+                    <td>
+                        <input id="Text2" type="text" ng-model="LastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Quantity</td>
+                    <td>
+                        <input id="Text3" type="text" ng-model="Quantity" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Cost</td>
+                    <td>
+                        <input id="Text4" type="text" ng-model="Cost" value="50" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <input type="button" value="Click Here"
+                               ng-click="message = FirstName + ' ' + Lastname + ' has to pay ' + Cost * Quantity" />
+                    </td>
+                    <td>
+                        {{message}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

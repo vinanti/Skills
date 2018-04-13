@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>6. AngularJS - Controllers 2</title>
+    <script src="script/angular.js"></script>
+    <script src="script/script6.js"></script>
+</head>
+<body ng-app="myModule">
+    <h1>AngularJS - Controllers</h1>
+    <div ng-controller="dataController">
+        <table style="width:500px; border:2px solid black;">
+            <thead>
+                <tr style="text-align:left">
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td>{{ employee.firstName }}</td>
+                    <td>{{ employee.lastName }}</td>
+                    <td>{{ employee.gender }}</td>
+                    <td>{{ employee.salary }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

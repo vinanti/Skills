@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>2.AngularJS - Directives 2</title>
+    <script src="script/angular.js"></script>
+</head>
+<body>
+    <h1>AngularJS - Directives</h1>
+    <div ng-app="">
+        <table border="0">
+            <tr>
+                <td><input type="checkbox" ng-model="enableDisableButton" />Disable Button</td>
+                <td><button ng-disabled="enableDisableButton">Click Me!</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" ng-model="showHideButton" />Show Button</td>
+                <td><button ng-show="showHideButton">Click me!</button></td>
+            </tr>
+            <tr>
+                <td><p>Total click: {{ clickCounter }}</p></td>
+                <td><button ng-click="clickCounter = clickCounter + 1">Click Me!</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
