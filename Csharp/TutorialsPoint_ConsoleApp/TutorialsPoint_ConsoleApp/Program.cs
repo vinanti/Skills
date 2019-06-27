@@ -8,7 +8,7 @@ namespace TutorialsPoint_ConsoleApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.Write("Hello, \n");
             Console.WriteLine("Welcome to \t C#....");
