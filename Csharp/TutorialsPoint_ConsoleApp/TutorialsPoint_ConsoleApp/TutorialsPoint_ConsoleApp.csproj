@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComparisionOperators.cs" />
+    <Compile Include="ControlStatementIfElse.cs" />
     <Compile Include="DataTypes.cs" />
     <Compile Include="NullableType.cs" />
-    <Compile Include="Operators.cs" />
+    <Compile Include="ArithmaticOperators.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypeCasting.cs" />

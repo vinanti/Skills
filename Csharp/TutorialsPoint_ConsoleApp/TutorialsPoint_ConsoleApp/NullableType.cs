@@ -8,16 +8,19 @@ namespace TutorialsPoint_ConsoleApp
 {
     class NullableType
     {
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             string s = null;
             int? a = null;
-            Console.WriteLine(a);
-            int? b = a ?? 20;
-            Console.WriteLine(b);
-            a = 10;
-            b = a ?? 20;
-            Console.WriteLine(b);
+            Console.WriteLine("s:" + s + "\na:" + a);
+
+            int? a1 = 10;
+            int? b1 = a1 ?? 20;
+            Console.WriteLine(b1);
+
+            int? a2 = null;
+            int? b2 = a2 ?? 20;
+            Console.WriteLine(b2);
         }
     }
 }

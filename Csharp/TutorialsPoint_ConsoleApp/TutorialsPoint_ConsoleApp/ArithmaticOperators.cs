@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TutorialsPoint_ConsoleApp
 {
-    class Operators
+    class ArithmaticOperators
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Arithmatic Operators");
             int a = 50, b = 10, c = 5;
@@ -57,8 +57,6 @@ namespace TutorialsPoint_ConsoleApp
             Console.WriteLine(a4);
             Console.WriteLine(b4);
             Console.WriteLine("------------------------7\n\n\n");
-
-            Console.WriteLine("Comparision Operators");
         }
     }
 }

@@ -18,7 +18,7 @@ namespace TutorialsPoint_ConsoleApp
             int a = 10;
             object o = a; //boxing
             int b = (int)o; //unboxing
-
+            Console.WriteLine(o + "\n" + a + "\n" + b);
         }
     }
 }
