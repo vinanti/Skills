@@ -24,7 +24,7 @@ namespace TutorialsPoint_ConsoleApp
             Console.WriteLine("------------------------2");
 
             int a1 = 10, b1 = 20, c1 = 5;
-            int d1 = a1 + b1 + c1;
+            int d1 = a1 + b1 * c1;
             Console.WriteLine(d1);
             Console.WriteLine("------------------------3");
 

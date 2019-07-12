@@ -8,7 +8,7 @@ namespace TutorialsPoint_ConsoleApp
 {
     class NullableType
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             string s = null;
             int? a = null;

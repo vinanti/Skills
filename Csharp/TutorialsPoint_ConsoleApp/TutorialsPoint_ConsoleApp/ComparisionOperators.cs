@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;                                                                                                                                                                                                                using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,23 +23,7 @@ namespace TutorialsPoint_ConsoleApp
             string s = num % 2 == 0 ? "Even" : "Odd";
             Console.WriteLine(s);
             Console.WriteLine("------------------------2");
-            Console.WriteLine("AND");
-            Console.WriteLine(true && true);
-            Console.WriteLine(true && false);
-            Console.WriteLine(false && true);
-            Console.WriteLine(false && false);
-            Console.WriteLine("OR");
-            Console.WriteLine(true || true);
-            Console.WriteLine(true || false);
-            Console.WriteLine(false || true);
-            Console.WriteLine(false || false);
-            Console.WriteLine("------------------------3");
-            string username = Console.ReadLine();
-            string password = Console.ReadLine();
-
-            string valid = (username == "anadi" && password == "tp") ? "Welcome user" : "Invalid User";
-            Console.WriteLine(valid);
-            Console.WriteLine("------------------------4");
+            
         }
     }
 }
