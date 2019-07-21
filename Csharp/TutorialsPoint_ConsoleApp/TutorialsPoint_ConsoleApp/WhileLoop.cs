@@ -10,26 +10,38 @@ namespace TutorialsPoint_ConsoleApp
     {
         static void Main(string[] args)
         {
-            for (int num = 1; num <= 100; num++)
+            bool isprime = true;
+            int count = 0;
+            int num = 1;
+            while(count < 100)
             {
-                bool isprime = true;
-                for (num = 1; num <= 100; num++)
+                isprime = true;
+                for(int i=2; i<=Math.Sqrt(num); i++)
                 {
-                    isprime = true;
-                    for (int i = 2; i <= Math.Sqrt(num); i++)
+                    if (num % i ==0)
                     {
-                        if (num % i == 0)
-                        {
-                            isprime = false;
-                            break;
-                        }
+                        isprime = false;
+                        break;
                     }
-                    if (isprime)
-                        Console.Write(num + "\t");
                 }
+                if (isprime)
+                {
+                    Console.Write(num + "\t");
+                    count++;
+                }
+                num++;
             }
+            Console.WriteLine();
+            Console.WriteLine("------------------------1");
+            int num1 = int.Parse(Console.ReadLine());
+            int temp = num1;
+            int digit = 0;
+            while (temp != 0)
+            {
+                digit++;
+                temp = temp / 10;
+            }
+            Console.WriteLine("{0} is {1} digit number.", num1, digit);
         }
-        
-
     }
 }
