@@ -43,11 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays.cs" />
     <Compile Include="ComparisionOperators.cs" />
     <Compile Include="ControlStatementIfElse.cs" />
     <Compile Include="DataTypes.cs" />
+    <Compile Include="DoWhileLoop.cs" />
     <Compile Include="ForLoop.cs" />
     <Compile Include="IfElseStatement.cs" />
+    <Compile Include="JumpStatements.cs" />
     <Compile Include="LogicalOperators.cs" />
     <Compile Include="Loops.cs" />
     <Compile Include="NullableType.cs" />

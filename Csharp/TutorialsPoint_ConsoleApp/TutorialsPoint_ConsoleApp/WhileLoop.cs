@@ -8,7 +8,7 @@ namespace TutorialsPoint_ConsoleApp
 {
     class WhileLoop
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             bool isprime = true;
             int count = 0;
