@@ -8,7 +8,7 @@ namespace TutorialsPoint_ConsoleApp
 {
     class Arrays
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Array element");
             int[] arr = new int[] { 7, 3, 5, 1, 9, 2 };
