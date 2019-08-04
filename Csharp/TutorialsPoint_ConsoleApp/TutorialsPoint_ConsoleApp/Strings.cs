@@ -55,6 +55,23 @@ namespace TutorialsPoint_ConsoleApp
 
             //To check if string contains
             Console.WriteLine(str.Contains("India"));
+            Console.WriteLine(str.Contains("india"));
+            Console.WriteLine(str.Contains("abcd"));
+
+            //To compare string
+            Console.WriteLine(str.Equals(upper));
+            Console.WriteLine(str.Equals(upper, StringComparison.CurrentCultureIgnoreCase));
+            upper = "Tp";
+            Console.WriteLine(str.Equals(upper, StringComparison.CurrentCultureIgnoreCase));
+
+            //Index/position 
+            Console.WriteLine(str.IndexOf("in", StringComparison.CurrentCultureIgnoreCase));
+            
+            //Index after start index
+            Console.WriteLine(str.IndexOf("in",13, StringComparison.CurrentCultureIgnoreCase));
+
+            //Properties: Length
+            Console.WriteLine(str.Length);
         }
     }
 }
