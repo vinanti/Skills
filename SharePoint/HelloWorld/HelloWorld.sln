@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWeb", "HelloWorldWeb\HelloWorldWeb.csproj", "{607A22CB-5FA2-456F-87EA-1B3539BA2DA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CE2C99-B669-40DD-9751-4DEE9614FFD9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{607A22CB-5FA2-456F-87EA-1B3539BA2DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607A22CB-5FA2-456F-87EA-1B3539BA2DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607A22CB-5FA2-456F-87EA-1B3539BA2DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607A22CB-5FA2-456F-87EA-1B3539BA2DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEF6795B-34C6-432C-91D2-3B09B3AE196D}
+	EndGlobalSection
+EndGlobal
