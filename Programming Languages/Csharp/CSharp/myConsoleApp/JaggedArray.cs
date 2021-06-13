@@ -2,9 +2,9 @@ using System;
 
 namespace myConsoleApp
 {
-    class Program
+    class Program18d
     {
-        static void Main(string[] args)
+        static void Main18d(string[] args)
         {
             int[][] arr = new int[3][];
             arr[0] = new int[3] {1, 2, 3};
