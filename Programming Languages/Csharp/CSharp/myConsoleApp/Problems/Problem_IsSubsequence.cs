@@ -1,9 +1,9 @@
 using System;
 namespace myConsoleApp
 {
-    class Program
+    class Programp1
     {
-        static void Main(string[] args)
+        static void Mainp1(string[] args)
         {
             string s = "aaaaaa";
             string t = "bbaaaa";

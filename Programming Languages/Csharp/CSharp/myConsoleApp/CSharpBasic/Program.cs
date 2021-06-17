@@ -2,9 +2,9 @@
 
 namespace myConsoleApp
 {
-    class Program1
+    class ProgramHello
     {
-        static void Main1(string[] args)
+        static void MainHello(string[] args)
         {
             Console.Write("Hello, \n");
             Console.WriteLine("\t Hello World!");
