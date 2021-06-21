@@ -2,9 +2,9 @@ using System;
 
 namespace myConsoleApp
 {
-    class Program
+    class ProgramArrayClass
     {
-        static void Main(string[] args)
+        static void MainArrayClass(string[] args)
         {
             int[] arr = new int[] {7, 3, 5, 1, 9, 2};
             int[] arrc = new int[6];
@@ -29,7 +29,8 @@ namespace myConsoleApp
 
             System.Console.WriteLine("Binary Search");
             System.Console.WriteLine(Array.BinarySearch(arr,9));
-            
+
+               
         }
     }
 }

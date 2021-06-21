@@ -7,7 +7,7 @@ namespace Program
 {
     class myProgram
     {
-        static void Main(string[] args)
+        static void Main123(string[] args)
         {
             SimpleLinkList lnk1 = new SimpleLinkList();
             lnk1.AddLast("One");

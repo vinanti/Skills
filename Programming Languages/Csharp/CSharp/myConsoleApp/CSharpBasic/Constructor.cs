@@ -6,7 +6,7 @@ namespace myConsoleApp
     class ConstructorClass
     {
         int marks; 
-        static int maxmarks = 50; 
+        static int maxmarks; 
         ConstructorClass()
         {
             this.marks = 45;
@@ -14,6 +14,14 @@ namespace myConsoleApp
         ConstructorClass(int marks)
         {
             this.marks = marks;
+        }
+        ConstructorClass(ConstructorClass t)
+        {
+            this.marks = t.marks;
+        }
+        static ConstructorClass()
+        {
+            ConstructorClass.maxmarks = 50;
         }
         void CalculatePercent()
         {
@@ -26,6 +34,13 @@ namespace myConsoleApp
             t1.CalculatePercent();
             ConstructorClass t2 = new ConstructorClass(35);
             t2.CalculatePercent();
+            ConstructorClass t3 = new ConstructorClass(t1);
+            t3.CalculatePercent();
+            ConstructorClass t4 = new ConstructorClass(45);
+            ConstructorClass t5 = t4;
+            t5.CalculatePercent();
+            t4.marks = 25;
+            t5.CalculatePercent();
         }
     }
 }
