@@ -4,19 +4,14 @@ using System.Text;
 
 namespace SimpleLinkListTailGenericNamespace
 {
-    //Step 1: create the node (Composite)
-    //This class represent a node in LinkedList
+    //Exercise 1: Implemet link list by C# Generics
     public class Node<AnyType>
     {
         public AnyType data;
         public Node<AnyType> next;
     }
-    //Step 2: create simple linked list
-    //This class will have a logic to connect the node object to create link list structure
     public class SimpleLinkListTailGeneric<AnyType>
     {
-        //Step 3: create the head
-        //This is start of the linked list chain
         Node<AnyType> head = null;
         Node<AnyType> tail = null;
 
@@ -24,7 +19,6 @@ namespace SimpleLinkListTailGenericNamespace
         {
             Node<AnyType> newItem = new Node<AnyType>();
             newItem.data = data;
-            //head, Tail --> newItem
             if (head == null)
             {
                 head = newItem;
@@ -32,9 +26,6 @@ namespace SimpleLinkListTailGenericNamespace
             }
             else
             {
-                //Performace: O(1)
-                //current tails next item is set to new item
-                //current tail set to new item
                 tail.next = newItem;
                 tail = newItem;
             }
@@ -50,18 +41,31 @@ namespace SimpleLinkListTailGenericNamespace
             }
             else
             {
-                //This is now the first item, so the current head becomes the next item 
                 newItem.next = head;
-                //this new item become the head
                 head = newItem;
             }
 
         }
+        public void RemoveItem(AnyType data)
+        {
+            Node<AnyType> current = head;
+            Node<AnyType> privious = head;
+            while (current != null)
+            {
+                if(EqualityComparer<AnyType>.Default.Equals(current.data, data))
+                {
+                    tail = current.next;
+                    privious.next = tail;
+                    break;
+                }
+                if (current != head)
+                    privious = privious.next;
+                current = current.next;
+            }
+        }
         public void ReadAll()
         {
             Node<AnyType> current = head;
-            //loop untill the last node
-            //Display data in Link List
             while (current.next != null)
             {
                 Console.WriteLine(current.data);

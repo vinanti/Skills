@@ -73,7 +73,7 @@ class Solution
 
     }
 
-       static void Main(string[] args) {
+       static void Main555(string[] args) {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
         SinglyLinkedList llist = new SinglyLinkedList();

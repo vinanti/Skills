@@ -7,7 +7,7 @@ namespace Program
 {
     class myProgram
     {
-        static void Main123(string[] args)
+        static void Main(string[] args)
         {
             SimpleLinkList lnk1 = new SimpleLinkList();
             lnk1.AddLast("One");
@@ -32,6 +32,9 @@ namespace Program
             lnk.AddLast(3);
             lnk.AddLast(4);
             lnk.AddFirst(0);
+            lnk.ReadAll();
+            lnk.RemoveItem(2);
+            Console.WriteLine("After Remove 3");
             lnk.ReadAll();
             Console.Read();
         }

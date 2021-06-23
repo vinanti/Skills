@@ -1,8 +1,9 @@
 using System;
-int a = 5;
-int b = a + 2; //OK
+//int a = 5;
+//int b = a + 2; //OK
 
-bool test = true;
+//bool test = true;
 
 // Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
-int c = a + test;
+//int c = a ;//+ test;
+
