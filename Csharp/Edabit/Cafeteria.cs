@@ -4,9 +4,9 @@ using System.Linq;
 using System.Collections;
 namespace Edabit
 {
-    class Program
+    class ProgramCS
     {
-        static void Main(string[] args)
+        static void MainC(string[] args)
         {
             int N = 10;
             int K = 1;
