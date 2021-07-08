@@ -15,10 +15,11 @@ namespace Program
             lnk1.AddLast("3");
             lnk1.AddLast("4");
             lnk1.AddFirst("First");
+            lnk1.AddInBetween("3.5", "3");
             lnk1.ReadAll();
-            
 
-            SimpleLinkList lnk2 = new SimpleLinkList();
+
+            SimpleLinkListTail lnk2 = new SimpleLinkListTail();
             lnk2.AddLast("One");
             lnk2.AddLast("Two");
             lnk2.AddLast("3");

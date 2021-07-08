@@ -40,6 +40,27 @@ namespace SimpleLinkListNamespace
                 current.next = newItem;
             }
         }
+        public void AddInBetween(object data, object afterData)
+        {
+            Node newItem = new Node();
+            newItem.data = data;
+
+            Node afterDataItem = new Node();
+            afterDataItem.data = afterData;
+
+            Node current = head;
+                //loop and find the after node
+                while (current.next.data != afterData)
+                {
+                    current = current.next;
+                }
+            Node temp = new Node();
+            temp.next = current;
+            current.next = newItem;
+            current = current.next;
+            current.next = temp;
+
+        }
         public void AddFirst(object data)
         {
             Node newItem = new Node();

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectionOperationns
 {
-    class Program
+    class Program1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             List<Employee> employees = new List<Employee>()
             {
