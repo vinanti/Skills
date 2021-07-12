@@ -16,6 +16,9 @@ namespace Program
             lnk1.AddLast("4");
             lnk1.AddFirst("First");
             lnk1.AddInBetween("3.5", "3");
+            lnk1.RemoveLast();
+            lnk1.RemoveFirst();
+            lnk1.RemoveInBetween("Two");
             lnk1.ReadAll();
 
 

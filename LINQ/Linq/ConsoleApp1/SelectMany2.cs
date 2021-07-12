@@ -10,7 +10,7 @@ namespace SelectManyns
 {
     class SelectMany2
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             var dataSource = new List<Employee2>()
             {

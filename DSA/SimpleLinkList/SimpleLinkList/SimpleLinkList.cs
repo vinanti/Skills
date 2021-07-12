@@ -50,12 +50,12 @@ namespace SimpleLinkListNamespace
 
             Node current = head;
                 //loop and find the after node
-                while (current.next.data != afterData)
-                {
-                    current = current.next;
-                }
+            while (current.data != afterData)
+            {
+                current = current.next;
+            }
             Node temp = new Node();
-            temp.next = current;
+            temp = current.next;
             current.next = newItem;
             current = current.next;
             current.next = temp;
@@ -69,6 +69,32 @@ namespace SimpleLinkListNamespace
             newItem.next = head;
             //this new item become the head
             head = newItem;
+        }
+        public void RemoveLast()
+        {
+            Node current = head;
+            while (current.next.next != null)
+            {
+                current = current.next;
+            }
+            current.next = null;
+        }
+
+        public void RemoveFirst()
+        {
+            head = head.next;
+        }
+        public void RemoveInBetween(object data)
+        {
+
+            Node current = head;
+            while (current.data != data)
+            {
+                current = current.next;
+            }
+            Node temp = new Node();
+            temp = current.next;
+            current = temp;
         }
         public void ReadAll()
         {

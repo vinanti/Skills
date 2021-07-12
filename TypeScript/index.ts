@@ -15,6 +15,6 @@ const isAccountCreated : number | boolean = 5454654   //"dsff" invalid //5465646
 
 const isUserDeleted : any = true //27384 //{} //"yes"
 
-enum Color {Red, Green, Blue};
+enum Color {Red, Green, Blue, Yellow };
 
 const carColor : Color =  Color.Red  //Color.Yellow invalid //Color.Blue;

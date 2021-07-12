@@ -15,6 +15,7 @@ var Color;
     Color[Color["Red"] = 0] = "Red";
     Color[Color["Green"] = 1] = "Green";
     Color[Color["Blue"] = 2] = "Blue";
+    Color[Color["Yello"] = 3] = "Yello";
 })(Color || (Color = {}));
 ;
 var carColor = Color.Red; //Color.Yellow invalid //Color.Blue;

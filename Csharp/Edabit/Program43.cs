@@ -3,9 +3,9 @@ using System;
 
 namespace Edabit
 {
-    class Program
+    class Program43
     {
-        static void Main(string[] args)
+        static void Main43(string[] args)
         {
             Console.WriteLine(IsOdd(-5));
             Console.WriteLine(IsOdd(25));
