@@ -92,9 +92,9 @@ namespace SimpleLinkListNamespace
             {
                 current = current.next;
             }
-            Node temp = new Node();
-            temp = current.next;
-            current = temp;
+            //Node temp = current.next.next;
+            current.data = current.next.data;
+            current.next = current.next.next;
         }
         public void ReadAll()
         {

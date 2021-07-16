@@ -33,7 +33,7 @@ namespace SelectManyns
                         new Techs() {Technology = "C#" }
                     }},
                 new Employee2(){Id=4, Name="Kim", Email="kim@gmail.com", Programming = new List<Techs>() },
-                new Employee2(){Id=5, Name="Adam", Email="adam@gmail.com", Programming = new List<Techs>() },
+                new Employee2(){Id=5, Name="Adam", Email="adam@gmail.com", Programming = new List<Techs>() }
             };
 
             var methodQuery = dataSource.SelectMany(emp => emp.Programming).ToList();

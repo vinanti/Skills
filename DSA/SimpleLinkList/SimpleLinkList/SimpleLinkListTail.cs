@@ -35,6 +35,27 @@ namespace SimpleLinkListTailNamespace
                 tail = newItem;
             }
         }
+
+        internal void RemoveLast()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void RemoveInBetween(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void RemoveFirst()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void AddInBetween(object data, object after)
+        {
+            throw new NotImplementedException();
+        }
+
         public void AddFirst(object data)
         {
             Node newItem = new Node();

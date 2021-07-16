@@ -36,8 +36,29 @@ namespace DoubleLinkListNamespace
             }
         }
 
-        //ReadAll
-        //readReverse
+        public void ReadAll()
+        {
+            Node<T> current = Head;
+            while(current.next != null)
+            {
+                Console.WriteLine(current.data);
+                current = current.next;
+            }
+            Console.WriteLine(current.data);
+        }
+
+        public void ReadReverse()
+        {
+            Node<T> current = Tail;
+            while (current.prev != null)
+            {
+                Console.WriteLine(current.data);
+                current = current.prev;
+            }
+            Console.WriteLine(current.data);
+        }
+
+        //Add Privious
         //Circular LinkList
     }
 }

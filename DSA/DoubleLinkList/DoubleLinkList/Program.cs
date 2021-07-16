@@ -1,4 +1,5 @@
 ﻿using System;
+using DoubleLinkListNamespace;
 
 namespace DoubleLinkList
 {
@@ -6,7 +7,14 @@ namespace DoubleLinkList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            DoubleLinkList<string> d = new DoubleLinkList<string>();
+
+            d.AddLast("1");
+            d.AddLast("2");
+
+            d.ReadAll();
+            d.ReadReverse();
+            Console.ReadLine();
         }
     }
 }

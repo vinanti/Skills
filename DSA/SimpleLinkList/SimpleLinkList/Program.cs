@@ -28,6 +28,10 @@ namespace Program
             lnk2.AddLast("3");
             lnk2.AddLast("4");
             lnk2.AddFirst("First");
+            lnk2.AddInBetween("3.5", "3");
+            lnk2.RemoveLast();
+            lnk2.RemoveFirst();
+            lnk2.RemoveInBetween("Two");
             lnk2.ReadAll();
          
             SimpleLinkListTailGeneric<int> lnk = new SimpleLinkListTailGeneric<int>();
@@ -36,6 +40,11 @@ namespace Program
             lnk.AddLast(3);
             lnk.AddLast(4);
             lnk.AddFirst(0);
+            lnk.AddInBetween(3.5, 3);
+            lnk.RemoveLast();
+            lnk.RemoveFirst();
+            lnk.RemoveInBetween(2);
+
             lnk.ReadAll();
             lnk.RemoveItem(2);
             Console.WriteLine("After Remove 3");

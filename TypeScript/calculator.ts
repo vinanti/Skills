@@ -1,4 +1,4 @@
-function Calculator(number1: number, number2 : number, operator? : string) : number
+function Calculator1(number1: number, number2 : number, operator? : string) : number
 {
     switch(operator)
     {
@@ -16,5 +16,5 @@ function add(number1 : number, number2 : number) : number
 {
     return number1 + number2;
 }
-console.log(Calculator(1,3,"+"));
-console.log(Calculator(1,3));
+console.log(Calculator1(1,3,"+"));
+console.log(Calculator1(1,3));

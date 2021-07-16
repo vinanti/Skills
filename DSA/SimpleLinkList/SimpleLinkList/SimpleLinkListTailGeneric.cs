@@ -63,6 +63,27 @@ namespace SimpleLinkListTailGenericNamespace
                 current = current.next;
             }
         }
+
+        internal void RemoveInBetween(int v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void RemoveFirst()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void RemoveLast()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void AddInBetween(double v1, int v2)
+        {
+            throw new NotImplementedException();
+        }
+
         public void ReadAll()
         {
             Node<AnyType> current = head;
