@@ -7,20 +7,20 @@ using ProjectionOperationns;
 
 namespace ConsoleApp1
 {
-    class SortingOperatorsOrderBy
+    class SortingOperatorsOrderByDescending
     {
-        static void Main_SortingOperatorsOrderBy(string[] args)
+        static void Main_SortingOperatorsOrderByDescending(string[] args)
         {
             var dataSourceInt = new List<int>() { 5, 12, 13, 1, 7, 53, 100 };
-            //Ex. set data in assending order
+            //Ex. set data in descending order
             var querySyntax = (from num in dataSourceInt
                                where num > 10
-                               orderby num
+                               orderby num descending
                                select num).ToList();
             foreach(var item in querySyntax)
                 Console.WriteLine(item);
 
-            var methodSyntax = dataSourceInt.Where(num => num > 10).OrderBy(num => num).ToList();
+            var methodSyntax = dataSourceInt.Where(num => num > 10).OrderByDescending(num => num).ToList();
             foreach (var item in methodSyntax)
                 Console.WriteLine(item);
             Console.WriteLine("----------------------------------------");
@@ -28,13 +28,13 @@ namespace ConsoleApp1
             var dataSourceString = new List<string>() { "Smith", "Anderson", "Wright", "Mitchell","Thomas","Allen","Evans", "Collins" };
             //Ex. set data in assending order
             var querySyntax2 = (from name in dataSourceString
-                                where name.Length > 6
-                               orderby name
+                                where name.Length > 5
+                               orderby name descending
                                select name).ToList();
             foreach (var item in querySyntax2)
                 Console.WriteLine(item);
 
-            var methodSyntax2 = dataSourceString.Where(name => name.Length > 6).OrderBy(num => num).ToList();
+            var methodSyntax2 = dataSourceString.Where(name => name.Length > 5).OrderByDescending(num => num).ToList();
             foreach (var item in methodSyntax2)
                 Console.WriteLine(item);
             Console.WriteLine("----------------------------------------");
@@ -50,21 +50,15 @@ namespace ConsoleApp1
 
             var querySyntax3 = (from emp in dataSource
                                 where emp.Id > 2
-                               orderby emp.Name
+                               orderby emp.Name descending
                                select emp).ToList();
             foreach (var item in querySyntax3)
                 Console.WriteLine(item.Name);
 
-            var methodSyntax3 = dataSource.Where(emp => emp.Id > 2).OrderBy(emp => emp.Name).ToList();
+            var methodSyntax3 = dataSource.Where(emp => emp.Id > 2).OrderByDescending(emp => emp.Name).ToList();
             foreach (var item in methodSyntax3)
                 Console.WriteLine(item.Name);
 
-            Console.WriteLine("----------------------------------------");
-            List<int> arr = new List<int>() { 1, 2, 3, 4, 5 };
-            arr = arr.OrderBy(n => n).ToList();
-            long maxSum = arr.Skip(1).Sum(n => (long)n);
-            long minSum = arr.Take(arr.Count - 2).Sum(n => (long)n);
-            Console.WriteLine(minSum + " " + maxSum);
             Console.ReadLine();
         }
     }

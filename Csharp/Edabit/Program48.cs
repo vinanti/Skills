@@ -1,4 +1,4 @@
-﻿//How Edabit Works
+﻿//Purge and Organize
 using System;
 
 namespace Edabit
