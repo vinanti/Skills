@@ -21,13 +21,13 @@ namespace ProjectionOperationns
             //Ex - Select all data in one time
             Console.WriteLine("----------------------------------------");
             var basicQuery = (from emp in employees
-                             select emp).ToList();
+                              select emp).ToList();
             foreach (var item in basicQuery)
                 Console.WriteLine("Id:" + item.Id + " Name:" + item.Name);
 
             Console.WriteLine("----------------------------------------");
             var basicQueryList = (from emp in employees
-                              select emp).ToList();
+                                  select emp).ToList();
             foreach (var item in basicQueryList)
                 Console.WriteLine("Id:" + item.Id + " Name:" + item.Name);
 
@@ -58,7 +58,7 @@ namespace ProjectionOperationns
             //Ex. to increse Id by 1
             Console.WriteLine("----------------------------------------");
             var basicPropQuery1 = (from emp in employees
-                                  select emp.Id + 1).ToList();
+                                   select emp.Id + 1).ToList();
             foreach (var item in basicPropQuery1)
                 Console.WriteLine("Id:" + item);
 
@@ -72,7 +72,7 @@ namespace ProjectionOperationns
             //Ex. to get List of integer of Id
             Console.WriteLine("----------------------------------------");
             var basicPropQuery2 = (from emp in employees
-                                  select emp.Id.ToString()).ToList();
+                                   select emp.Id.ToString()).ToList();
             foreach (var item in basicPropQuery2)
                 Console.WriteLine("Id:" + item);
 
@@ -96,22 +96,22 @@ namespace ProjectionOperationns
             //Convert Data to some other class - Student
             Console.WriteLine("----------------------------------------");
             var selectQueryStudent = from emp in employees
-                              select new Student()
-                              {
-                                  StudentId = emp.Id,
-                                  StEmail = emp.Email,
-                                  FullName = emp.Name
-                              };
+                                     select new Student()
+                                     {
+                                         StudentId = emp.Id,
+                                         StEmail = emp.Email,
+                                         FullName = emp.Name
+                                     };
             foreach (var item in selectQueryStudent)
                 Console.WriteLine($"Id: { item.StudentId}, Name: {item.FullName} Email: {item.StEmail}");
 
             Console.WriteLine("----------------------------------------");
-            var selectMethodStudent = employees.Select(emp => new Student 
-                            { 
-                                FullName = emp.Name, 
-                                StEmail = emp.Email, 
-                                StudentId = emp.Id 
-                            }).ToList();
+            var selectMethodStudent = employees.Select(emp => new Student
+            {
+                FullName = emp.Name,
+                StEmail = emp.Email,
+                StudentId = emp.Id
+            }).ToList();
             foreach (var item in selectMethodStudent)
                 Console.WriteLine($"Id: { item.StudentId}, Name: {item.FullName} Email: {item.StEmail}");
 
@@ -129,11 +129,11 @@ namespace ProjectionOperationns
 
             Console.WriteLine("----------------------------------------");
             var selectQueryMethodAnonums = employees.Select(emp => new
-                                      {
-                                          CId = emp.Id,
-                                          CEmail = emp.Email,
-                                          CName = emp.Name
-                                      }).ToList();
+            {
+                CId = emp.Id,
+                CEmail = emp.Email,
+                CName = emp.Name
+            }).ToList();
             foreach (var item in selectQueryMethodAnonums)
                 Console.WriteLine($"Id: { item.CId}, Name: {item.CName} Email: {item.CEmail}");
 

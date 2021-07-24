@@ -28,7 +28,7 @@ namespace SelectManyns
 
             var methodSyntax = dataSource.SelectMany(emp => emp.programming).ToList();
 
-            foreach(var item in methodSyntax)
+            foreach (var item in methodSyntax)
                 Console.WriteLine("Programming: " + item);
 
             var querySyntax = (from emp in dataSource

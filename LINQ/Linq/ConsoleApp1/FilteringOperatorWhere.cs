@@ -12,7 +12,7 @@ namespace ConsoleApp1
     {
         static void Main_FilteringOperatorWhere(string[] args)
         {
-            var dataSource = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var dataSource = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             //Ex. get all elemets which are greator than 5
             var querySyntx = (from n in dataSource
                              where n > 5
@@ -20,9 +20,9 @@ namespace ConsoleApp1
             foreach(var d in querySyntx)
                 Console.WriteLine(d);
 
-            var methodSyntax = dataSource.Where(n=> n > 5).ToList();
-            foreach (var d in methodSyntax)
-                Console.WriteLine(d);
+            var methodSyntax = dataSource.ToList().IndexOf(dataSource.Where(n => n >= 11).FirstOrDefault());
+            //foreach (var d in methodSyntax)
+                Console.WriteLine(methodSyntax);
 
             Console.WriteLine("----------------------------------------");
             //Ex. get all elemets which are less than equal 5 or greater than 9
