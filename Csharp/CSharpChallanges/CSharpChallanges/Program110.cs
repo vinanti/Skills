@@ -8,7 +8,7 @@ namespace CSharpChallanges
 {
     class Program110
     {
-        static void Main(string[] args)
+        static void Main110(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

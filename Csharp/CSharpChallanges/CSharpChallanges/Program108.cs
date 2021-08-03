@@ -15,7 +15,7 @@ namespace CSharpChallanges
 {
     class Program108
     {
-        static void Main(string[] args)
+        static void Main108(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

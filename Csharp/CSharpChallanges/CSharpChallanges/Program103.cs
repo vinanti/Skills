@@ -34,7 +34,7 @@ namespace CSharpChallanges
 {
     class Program103
     {
-        static void Main(string[] args)
+        static void Main103(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

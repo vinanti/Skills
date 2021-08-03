@@ -12,7 +12,7 @@ namespace AllDataStructures
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             //Queue t;
             //t.Enqueue()

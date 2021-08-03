@@ -21,7 +21,7 @@ namespace CSharpChallanges
 {
     class Program107
     {
-        static void Main(string[] args)
+        static void Main107(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
