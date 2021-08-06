@@ -1,0 +1,5 @@
+﻿/*Unique Word Abbreviation
+ 
+ 
+ 
+ */

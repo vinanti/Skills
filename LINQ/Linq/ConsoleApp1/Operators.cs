@@ -8,7 +8,7 @@ namespace Operatorsnp
 {
     class Operators
     {
-        static void Main(string[] args)
+        static void MainOperator(string[] args)
         {
             List<string> strList1 = new List<string> { "Mihika", "Vinanti" };
             List<List<string>> strList2 = new List<List<string>> { new List<string> { "Mihika", "Vinanti" }, new List<string> { "Yogesh", "Thakur" } };
