@@ -41,7 +41,7 @@ namespace Q009ns
 {
     class Q009
     {
-        static void Main(string[] args)
+        static void Main009(string[] args)
         {
             Console.WriteLine(stringSplosion("a"));
             Console.WriteLine(stringSplosion("Code"));
