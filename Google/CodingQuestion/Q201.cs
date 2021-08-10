@@ -6,7 +6,7 @@ namespace Q201ns
 {
     class Q201
     {   
-        static void Main(string[] args)
+        static void Main201(string[] args)
         {
             DVD[] dvdCollection = new DVD[15];
             DVD dvd1 = new DVD("dvd1", 1984, "no director");
