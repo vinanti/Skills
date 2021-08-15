@@ -1,4 +1,5 @@
 ﻿/*98. Validate Binary Search Tree
+ https://leetcode.com/problems/validate-binary-search-tree/
 
 Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 
@@ -46,6 +47,9 @@ namespace Q303ns
 
             TreeNode p3 = new TreeNode(5, new TreeNode(1), new TreeNode(4, new TreeNode(3), new TreeNode(6)));
             Console.WriteLine(IsValidBST(p3));
+
+            TreeNode p4 = new TreeNode(50, new TreeNode(10), new TreeNode(80, new TreeNode(70), new TreeNode(90)));
+            Console.WriteLine(IsValidBST(p4));
         }
         static bool IsValidBST(TreeNode root)
         {

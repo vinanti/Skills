@@ -10,3 +10,30 @@ Input: ["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"]
 Output: 1,9,10
  
  */
+using System;
+using System.Text;
+using System.Linq;
+using System.Collections.Generic;
+namespace Q014ns
+{
+    class Q014
+    {
+        static void Main014(string[] args)
+        {
+            Console.WriteLine("Case 1");
+            string[] strArr1 = new string[] { "1, 3, 4, 7, 13", "1, 2, 4, 13, 15" };
+            Console.WriteLine(FindIntersection(strArr1));
+
+            Console.WriteLine("Case 2");
+            string[] strArr2 = { "1, 3, 9, 10, 17, 18", "1, 4, 9, 10" };
+            Console.WriteLine(FindIntersection(strArr2));
+
+        }
+        static string FindIntersection(string[] strArr)
+        {
+            List<int> num1 = strArr[0].Split(',').Select(x => Convert.ToInt32(x)).ToList();
+            List<int> num2 = strArr[1].Split(',').Select(x => Convert.ToInt32(x)).ToList();
+            return string.Join(",", num1.Intersect(num2).Select(x => x.ToString()).ToArray());
+        }
+    }
+}

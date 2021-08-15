@@ -1,10 +1,11 @@
-﻿/*Create a Binary Search tree*/
+﻿/*Create a Binary Search tree with Insert, Contains and Traversal methods
+	1. Create a class Node
+	2. Create a pointers to left Node and right Node
+	3. Create data of any int (can be any)
+Make a constructor (parameterized constructor)
+*/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Q301ns
 {
