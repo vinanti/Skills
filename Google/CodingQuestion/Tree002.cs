@@ -1,12 +1,12 @@
 ﻿/*Valid Binary Search Tree
- 
+ https://www.youtube.com/watch?v=i_Q0v_Ct5lY&list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX&index=7
  */
 
 using System;
 
 namespace Q304ns
 {
-    class Q304
+    class Tree002
     {
         static void Main304(string[] args)
         {

@@ -1,4 +1,5 @@
 ﻿/*Create a Binary Search tree with Insert, Contains and Traversal methods
+ https://www.youtube.com/watch?v=oSWTXtMglKE
 	1. Create a class Node
 	2. Create a pointers to left Node and right Node
 	3. Create data of any int (can be any)
@@ -9,7 +10,7 @@ using System;
 
 namespace Q301ns
 {
-    class Q301
+    class Tree001
     {
         static void Main301(string[] args)
         {
