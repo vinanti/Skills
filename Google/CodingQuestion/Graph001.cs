@@ -1,11 +1,15 @@
-﻿using System;
+﻿/*Graph Search, DFS and BFS
+ https://www.youtube.com/watch?v=zaBhtODEL0w&list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL&index=15
+https://questpond.teachable.com/ Chapter 4 :- Graph data structure ,BFS and DFS
+ */
+using System;
 using System.Collections.Generic;
 
 namespace Graph
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main001()
         {
             Graph g = new Graph(7);
             g.AddEdge(1, 2);
@@ -17,16 +21,16 @@ namespace Graph
             g.BFS(1);
             Console.WriteLine("-----------");
             g.DFS(1);
-            //Console.WriteLine("-----------");
-            //g.BFS(2);
-            //Console.WriteLine("-----------");
-            //g.BFS(3);
-            //Console.WriteLine("-----------");
-            //g.BFS(4);
-            //Console.WriteLine("-----------");
-            //g.BFS(5);
-            //Console.WriteLine("-----------");
-            //g.BFS(6);
+            Console.WriteLine("-----------");
+            g.BFS(2);
+            Console.WriteLine("-----------");
+            g.BFS(3);
+            Console.WriteLine("-----------");
+            g.BFS(4);
+            Console.WriteLine("-----------");
+            g.BFS(5);
+            Console.WriteLine("-----------");
+            g.BFS(6);
         }
     }
     public class Graph
@@ -63,14 +67,14 @@ namespace Graph
             //add to queue
             queue.Enqueue(s);
 
-            while(queue.Count != 0)
+            while (queue.Count != 0)
             {
                 s = queue.Dequeue();
                 Console.WriteLine("->" + s);
 
                 foreach (var next in adj[s])
                 {
-                    if(!visited[next])
+                    if (!visited[next])
                     {
                         visited[next] = true;
                         //add to the queue

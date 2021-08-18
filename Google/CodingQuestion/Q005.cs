@@ -39,7 +39,7 @@ namespace Q005ns
 {
     class Q005
     {
-        static void Main005(string[] args)
+        static void Main005()
         {
             Console.WriteLine(array123(new int[] { }));
             Console.WriteLine(array123(new int[] { 1, 2 }));

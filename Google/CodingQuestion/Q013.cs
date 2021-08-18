@@ -9,3 +9,21 @@ centered_average([1, 1, 5, 5, 10, 8, 7]) → 5
 centered_average([-10, -4, -2, -4, -2, 0]) → -3
  
  */
+using System;
+class Q013
+{
+    static void Main013()
+    {
+        Console.WriteLine(centered_average(new int[] { 1, 2, 3, 4, 100 })); //3
+        Console.WriteLine(centered_average(new int[] { 1, 1, 5, 5, 10, 8, 7 })); //5
+        Console.WriteLine(centered_average(new int[] { -10, -4, -2, -4, -2, 0 })); //-3
+    }
+    static int centered_average(int[] nums)
+    {
+        if(nums.Length % 2 == 0)
+        {
+            return (nums[nums.Length / 2] + nums[nums.Length / 2 + 1]) / 2;
+        }
+        return nums[nums.Length / 2];
+    }
+}

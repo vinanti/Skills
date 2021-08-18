@@ -13,7 +13,7 @@ namespace Q112ns
 {
     class Q112
     {
-        static void Main112(string[] args)
+        static void Main112()
         {
             //Immutable String
             string s = "";

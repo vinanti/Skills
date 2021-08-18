@@ -7,7 +7,7 @@ namespace CodingQuestion
 {
     class Q701
     {
-        static void Main701(string[] args)
+        static void Main701()
         {
 
             LinkedList<string> myList = new LinkedList<string>();

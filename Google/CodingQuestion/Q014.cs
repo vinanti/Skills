@@ -18,15 +18,15 @@ namespace Q014ns
 {
     class Q014
     {
-        static void Main014(string[] args)
+        static void Main014()
         {
             Console.WriteLine("Case 1");
             string[] strArr1 = new string[] { "1, 3, 4, 7, 13", "1, 2, 4, 13, 15" };
-            Console.WriteLine(FindIntersection(strArr1));
+            Console.WriteLine(FindIntersection(strArr1)); //1,4,13
 
             Console.WriteLine("Case 2");
             string[] strArr2 = { "1, 3, 9, 10, 17, 18", "1, 4, 9, 10" };
-            Console.WriteLine(FindIntersection(strArr2));
+            Console.WriteLine(FindIntersection(strArr2)); //1,9,10
 
         }
         static string FindIntersection(string[] strArr)

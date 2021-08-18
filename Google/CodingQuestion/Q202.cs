@@ -11,7 +11,7 @@ namespace Q202ns
 {
     class Q202
     {
-        static void Main202(string[] args)
+        static void Main202()
         {
             DVD[] dvdCollection = new DVD[15];
 

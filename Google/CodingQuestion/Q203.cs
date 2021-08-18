@@ -9,7 +9,7 @@ namespace Q203ns
 {
     class Q203
     {
-        static void Main203(string[] args)
+        static void Main203()
         {
 
             // Create a new array with a capacity of 6.

@@ -5,7 +5,7 @@ namespace CodingQuestion
 {
     class Q1001
     {
-        static void Main1001(string[] args)
+        static void Main1001()
         {
             int[] array = new int[] { 1, 3, 4, 5, 13, 20, 25, 40, 42, 44, 53 };
             Console.WriteLine(BinarySearchRecursive(array,13));

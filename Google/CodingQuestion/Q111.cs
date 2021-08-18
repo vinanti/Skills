@@ -9,7 +9,7 @@ namespace Q111ns
 {
     class Q111
     {
-        static void Main111(string[] args)
+        static void Main111()
         {
             String s1 = "Hello World";
             // 1. concatenate

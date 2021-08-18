@@ -35,7 +35,7 @@ namespace Q213ns
             return false;
         }
 
-        public static void Main213(string[] args)
+        static void Main213()
         {
 
             // Declare a new array of 6 elements

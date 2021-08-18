@@ -9,7 +9,7 @@ namespace Q207ns
 {
     class Q207
     {
-        static void Main207(string[] args)
+        static void Main207()
         {
             Console.WriteLine("Inserting at the End of an Array");
             // Declare an integer array of 6 elements

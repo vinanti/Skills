@@ -5,7 +5,7 @@ namespace CodingQuestion
 {
     class Q1002
     {
-        static void Main1002(string[] args)
+        static void Main1002()
         {
             int[] array = new int[] { 1, 3, 4, 5, 13, 20, 25, 40, 42, 44, 53 };
             Console.WriteLine(BinarySearchIterative(array, 13));

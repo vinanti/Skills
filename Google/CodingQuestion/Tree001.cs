@@ -12,7 +12,7 @@ namespace Q301ns
 {
     class Tree001
     {
-        static void Main301(string[] args)
+        static void Main301()
         {
             Node n = new Node(10);
             n.Insert(15);

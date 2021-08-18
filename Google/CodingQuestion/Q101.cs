@@ -18,7 +18,7 @@ namespace Q101ns
 {
     class Q101
     {
-        static void Main101(string[] args)
+        static void Main101()
         {
             // 1. Initialize
             int[] array = new int[6] { 6, 3, 8, 7, 2, 9 };

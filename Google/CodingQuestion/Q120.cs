@@ -12,7 +12,7 @@ namespace CodingQuestion
 {
     class Q120
     {
-        static void Main120(string[] args)
+        static void Main120()
         {
             int[] nums = new int[] { 1, 2, 3, 3, 3, 4, 3, 5, 3, 6, 3, 7, 3, 8, 3, 9 };
             Console.WriteLine(removeElement(nums, 3));

@@ -26,7 +26,7 @@ namespace Q102ns
 {
     class Q102
     {
-        static void Main102(string[] args)
+        static void Main102()
         {
             ArrayList array = new ArrayList();
             int[] nums = new int[] {2, 5, 1, 4, 3 };

@@ -67,7 +67,7 @@ namespace Q007ns
 {
     class Q007
     {
-        static void Main007(string[] args)
+        static void Main007()
         {
             Console.WriteLine(SubtractProductAndSum(5));
             Console.WriteLine(SubtractProductAndSum(13));

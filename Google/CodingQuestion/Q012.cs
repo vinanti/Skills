@@ -49,3 +49,56 @@ Explanation 1
 Because all of the first  letters of the infinite string are a, we return .
  
  */
+
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
+class Result
+{
+
+    /*
+     * Complete the 'repeatedString' function below.
+     *
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts following parameters:
+     *  1. STRING s
+     *  2. LONG_INTEGER n
+     */
+
+    public static long repeatedString(string s, long n)
+    {
+        if (s.Length == 0 || n == 0)
+            return 0;
+        string sb;
+        long a = 0;
+        if (n < s.Length)
+        {
+            sb = s.Substring(0, (int)n);
+            a = sb.Count(c => c == 'a');
+        }
+        else
+        {
+            sb = s.Substring(0, (int)(n % s.Length));
+            a = s.Count(c => c == 'a') * (n / s.Length) + sb.Count(c => c == 'a');
+        }
+        return a;
+    }
+    static void Main012()
+    {
+        Console.WriteLine(repeatedString("abc",10)); //7
+        Console.WriteLine(repeatedString("a", 1000000000000)); //1000000000000
+    }
+}
+
+

@@ -32,7 +32,7 @@ namespace Q302ns
 {
     class Q302
     {
-        static void Main302(string[] args)
+        static void Main302()
         {
             TreeNode p = new TreeNode(1, new TreeNode(2), new TreeNode(3));
             TreeNode q = new TreeNode(1, new TreeNode(2), new TreeNode(3));

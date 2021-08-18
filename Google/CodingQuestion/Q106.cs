@@ -33,7 +33,7 @@ namespace Q106ns
                 Console.WriteLine();
             }
         }
-        public static void Main106(String[] args)
+        static void Main106()
         {
             Console.WriteLine("Example I:");
             int[,] a = new int[2,5];

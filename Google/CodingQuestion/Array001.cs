@@ -9,7 +9,7 @@ namespace CodingQuestion
 {
     class Array001
     {
-        static void Main001(string[] args)
+        static void Main001()
         {
             Player p1 = new Player("Gayle", 1903);
             Player p2 = new Player("John", 1791);

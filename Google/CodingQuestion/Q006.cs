@@ -35,7 +35,7 @@ namespace Q006ns
 {
     class Q006
     {
-        static void Main006(string[] argus)
+        static void Main006()
         {
             Console.WriteLine(FirstFactorial(1)); //1
             Console.WriteLine(FirstFactorial(2)); //2

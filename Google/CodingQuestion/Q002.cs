@@ -40,7 +40,7 @@ namespace Q002
 {
     class makeBricksns
     {
-        static void Main002(string[] argus)
+        static void Main002()
         {
             Console.WriteLine(makeBricks(2, 1, 0)); //True
             Console.WriteLine(makeBricks(3, 1, 8)); //True

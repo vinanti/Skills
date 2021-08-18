@@ -8,7 +8,7 @@ namespace Q304ns
 {
     class Tree002
     {
-        static void Main304(string[] args)
+        static void Main304()
         {
             TreeNode p = new TreeNode(50);
             p.Insert(10);

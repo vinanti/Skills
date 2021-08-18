@@ -37,7 +37,7 @@ namespace Q303ns
 {
     class Q303
     {
-        static void Main303(string[] args)
+        static void Main303()
         {
             TreeNode p = new TreeNode(2, new TreeNode(1), new TreeNode(3));
             Console.WriteLine(IsValidBST(p));

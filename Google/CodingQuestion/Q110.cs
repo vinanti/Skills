@@ -6,7 +6,7 @@ namespace Q110ns
 {
     class Q110
     {
-        static void Main110(string[] airgs)
+        static void Main110()
         {
             // initialize
             string s1 = "Hello World";

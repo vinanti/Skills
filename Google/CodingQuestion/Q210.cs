@@ -9,7 +9,7 @@ namespace Q210ns
 {
     class Q210
     {
-        static void Main210(string[] args)
+        static void Main210()
         {
             Console.WriteLine("Deleting the last element of the Array.");
             // Declare an integer array of 10 elements.

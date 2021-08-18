@@ -37,7 +37,7 @@ namespace Tries001ns
 {
     class Tries001
     {
-        static void Main(string[] args)
+        static void Main001()
         {
             Trie trie = new Trie();
             trie.Insert("apple");

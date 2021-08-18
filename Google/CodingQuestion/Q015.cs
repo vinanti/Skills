@@ -40,7 +40,7 @@ namespace Q015ns
 {
     class Q015
     {
-        static void Main015(string[] args)
+        static void Main015()
         {
             Console.WriteLine("Parity 1");
             int[] nums1 = { 3, 1, 2, 4 };

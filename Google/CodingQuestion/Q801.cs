@@ -9,7 +9,7 @@ namespace Q8013
 {
     class Q801
     {
-        static void Main801(string[] args)
+        static void Main801()
         {
             Queue myQueue = new Queue();
 

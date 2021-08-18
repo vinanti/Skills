@@ -9,7 +9,7 @@ namespace CodingQuestion
 {
     class Q216
     {
-        public static void Main216(string[] args)
+        static void Main216()
         {
             int[] nums = new int[] { 9, -2, -9, 11, 56, -12, -3 };
             nums = squareEven(nums, nums.Length);

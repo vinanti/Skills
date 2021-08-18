@@ -46,7 +46,7 @@ namespace Q008ns
 {
     class Q008
     {
-        static void Main008(string[] args)
+        static void Main008()
         {
             Console.WriteLine(FirstReverse(""));
             Console.WriteLine(FirstReverse("Hello World and Coders"));

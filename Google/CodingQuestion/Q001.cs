@@ -30,7 +30,7 @@ namespace Q001
 {
     class Program001
     {
-        static void Main001(string[] args)
+        static void Main001()
         {
             Console.WriteLine(evenlySpaced(0, 0, 0));
             Console.WriteLine(evenlySpaced(2, 4, 6));

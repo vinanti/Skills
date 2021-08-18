@@ -36,7 +36,7 @@ namespace Q004ns
 {
     class Q004
     {
-        static void Main004(string[] args)
+        static void Main004()
         {
             Console.WriteLine(blackjack(22, 25));
             Console.WriteLine(blackjack(23, 20));

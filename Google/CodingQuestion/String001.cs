@@ -43,7 +43,7 @@ namespace Q0101ns
 {
     class String001
     {
-        static void Main101(string[] args)
+        static void Main101()
         {
             Console.WriteLine("Case1: , ");
             Console.WriteLine(RemoveCharToMakeAnagram("", ""));

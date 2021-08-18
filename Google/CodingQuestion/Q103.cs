@@ -74,7 +74,7 @@ namespace Q103ns
 {
     class Q103
     {
-        static void Main103(string[] arugs)
+        static void Main103()
         {
             Console.WriteLine("Pivot Index:" + PivotIndex(new int[] { }));  //-1
             Console.WriteLine("Pivot Index:" + PivotIndex(new int[] { 5 }));  //0
