@@ -1,9 +1,11 @@
-﻿/*Binary Search Recursive Algoritham*/
+﻿/*Binary Search Recursive Algoritham
+ O(log n)
+ */
 using System;
 
 namespace CodingQuestion
 {
-    class Q1001
+    class Search101
     {
         static void Main1001()
         {

@@ -3,7 +3,7 @@ using System;
 
 namespace CodingQuestion
 {
-    class Q1002
+    class Search102
     {
         static void Main1002()
         {

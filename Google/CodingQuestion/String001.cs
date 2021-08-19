@@ -1,74 +1,54 @@
-﻿/*Design Anagrams
- Given two strings (lowercase a->z), how many characters do we need to remove (from either)
-to make them anagram?
-Example
-hellow, billion --> 6 (he from hello and biin from billion)
-
-Q.
-empty -> 0
-case sensitive? all lower case
-max limit
-
-T.
-"", "" --> 0
-abc, "" --> 3
-aaa, a --> 2
-hello, billion --> 6
-glue, legs --> 2
-candy, day --> 2
-
-A.
-empty -> 0
-either input empty -> length of other input
-string -> 'a-z'
-compare occurance
-count = diffrence
-
-E.
-hello, billion --> 6
-//b=1, e=1, h=1, i=2, n=1 = 6
-
-C.
-O(n)
+﻿/*Operations in Array
+https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1143/
+        // 1. Initialize
+        // 2. Get Length
+        // 3. Access Element
+        // 4. Iterate all Elements
+        // 5. Modify Element
+        // 6. Sort
 
 Error:
-1. string passed without double quotes
-2. argument data type string not defined
-3. string should be in double quote
-4. count spell error
+1. Missed System directive
+2. Spell mistake WriteLine, L capital
+3. secolon missed after initializing array
+4. semicolan missed after Console.WriteLine
 */
 using System;
-using System.Linq;
-namespace Q0101ns
+class String001
 {
-    class String001
+    static void Main001()
     {
-        static void Main101()
-        {
-            Console.WriteLine("Case1: , ");
-            Console.WriteLine(RemoveCharToMakeAnagram("", ""));
-            Console.WriteLine("Case 2: abc, ");
-            Console.WriteLine(RemoveCharToMakeAnagram("abc", ""));
-            Console.WriteLine("Case 3: aaa, a");
-            Console.WriteLine(RemoveCharToMakeAnagram("aaa", "a"));
-            Console.WriteLine("Case 4: hello, billion");
-            Console.WriteLine(RemoveCharToMakeAnagram("hello", "billion"));
-            Console.WriteLine("Case 5: glue, legs");
-            Console.WriteLine(RemoveCharToMakeAnagram("glue", "legs"));
-            Console.WriteLine("Case 6: candy, day");
-            Console.WriteLine(RemoveCharToMakeAnagram("candy", "day"));
+        // 1. Initialize
+        int[] array = new int[6] { 6, 3, 8, 7, 2, 9 };
+        int[] array2 = new int[] { 1 };
+        int[] array3;
+        array3 = new int[] { 4, 5, 6 };
+        int[] array4 = new int[5];
+        array4 = new int[] { 1, 2, 3, 4, 5, 6 };
+        array4 = new int[2] { 1, 3 };
 
-        }
-        static int RemoveCharToMakeAnagram(string str1, string str2)
+        // 2. Get Length
+        int length = array.Length;
+        Console.WriteLine("Array Length is {0}", length);
+
+        // 3. Access Element    
+        Console.WriteLine("Element at index 2 and 5 are:" + array[2] + " and " + array[5]);
+
+        // 4. Iterate all Elements
+        Console.WriteLine("Elements of an array:");
+        foreach (int a in array)
+            Console.WriteLine(a);
+
+        // 5. Modify Element
+        array[3] = 10;
+        Console.WriteLine("Modified element at index 3 as 10: " + array[3]);
+
+        // 6. Sort
+        Array.Sort(array);
+        Console.WriteLine("Sorted Array:");
+        foreach (int a in array)
         {
-            if(str1.Length == 0 && str2.Length == 0) return 0;
-            if(str1.Length == 0) return str2.Length;
-            if(str2.Length == 0) return str1.Length;
-            string letters = "abcdefghijklmnopqrstuvwxyz";
-            int count = 0;
-            foreach(char c in letters)
-                count += Math.Abs(str1.Count(s => s == c) - str2.Count(s => s == c));
-            return count;
+            Console.WriteLine(a);
         }
     }
 }

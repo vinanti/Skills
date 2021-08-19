@@ -60,7 +60,7 @@ using System;
 using System.Collections.Generic;
 class Q206
 {
-    static void Main()
+    static void Main206()
     {
         Console.WriteLine(findLonely(new List<int> { 1})); //1
         Console.WriteLine(findLonely(new List<int> { 1, 1, 2 })); //2
