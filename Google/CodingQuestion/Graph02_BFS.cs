@@ -5,7 +5,7 @@ https://questpond.teachable.com/ Chapter 4 :- Graph data structure ,BFS and DFS
 using System;
 using System.Collections.Generic;
 
-namespace Graph
+namespace Graph_BFS
 {
     class Program
     {
@@ -17,20 +17,7 @@ namespace Graph
             g.AddEdge(3, 4);
             g.AddEdge(3, 5);
             g.AddEdge(4, 6);
-            Console.WriteLine("-----------");
             g.BFS(1);
-            Console.WriteLine("-----------");
-            g.DFS(1);
-            Console.WriteLine("-----------");
-            g.BFS(2);
-            Console.WriteLine("-----------");
-            g.BFS(3);
-            Console.WriteLine("-----------");
-            g.BFS(4);
-            Console.WriteLine("-----------");
-            g.BFS(5);
-            Console.WriteLine("-----------");
-            g.BFS(6);
         }
     }
     public class Graph
@@ -79,30 +66,6 @@ namespace Graph
                         visited[next] = true;
                         //add to the queue
                         queue.Enqueue(next);
-                    }
-                }
-            }
-        }
-
-        public void DFS(int s)
-        {
-            bool[] visited = new bool[V];
-
-            //For DFS use stack
-            Stack<int> stack = new Stack<int>();
-            visited[s] = true;
-            stack.Push(s);
-
-            while (stack.Count != 0)
-            {
-                s = stack.Pop();
-                Console.WriteLine("next->" + s);
-                foreach (int i in adj[s])
-                {
-                    if (!visited[i])
-                    {
-                        visited[i] = true;
-                        stack.Push(i);
                     }
                 }
             }

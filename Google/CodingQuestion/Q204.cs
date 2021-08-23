@@ -42,7 +42,7 @@ nums2.length == n
 
 using System;
 using System.Collections.Generic;
-public class Solution
+public class Q204
 {
     static void Main204()
     {

@@ -25,9 +25,9 @@ All the integers in nums are unique.
 nums is sorted in ascending order.
  */
 using System;
-class Search001
+class BinarySearchQ001
 {
-    static void Main()
+    static void Main001()
     {
         Console.WriteLine(BinarySearch(new int[] {-1,0,3,5,9,12},9)); //4
         Console.WriteLine(BinarySearch(new int[] {-1,0,3,5,9,12},2));  //-1

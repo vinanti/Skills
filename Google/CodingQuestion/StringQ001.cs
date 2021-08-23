@@ -72,7 +72,7 @@ using System;
 
 namespace Q103ns
 {
-    class Q103
+    class StringQ001
     {
         static void Main103()
         {

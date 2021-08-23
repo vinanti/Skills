@@ -31,3 +31,24 @@ Constraints:
 0 <= nums[i] <= 100
 The largest element in nums is unique.
  */
+
+using System;
+using System.Linq;
+public class Solution
+{
+    static void Main002()
+    {
+        Console.WriteLine(DominantIndex(new int[] { 3, 6, 1, 0 })); //1
+        Console.WriteLine(DominantIndex(new int[] { 1, 2, 3, 4 })); //-1
+        Console.WriteLine(DominantIndex(new int[] { 1 })); //0
+    }
+    public static int DominantIndex(int[] nums)
+    {
+        int largestNumber = nums.Max();
+        for (int i = 0; i < nums.Length; i++)
+        {
+            if (largestNumber != nums[i] && largestNumber < (nums[i] * 2)) return -1;
+        }
+        return Array.IndexOf(nums, largestNumber);
+    }
+}

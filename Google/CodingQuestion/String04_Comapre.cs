@@ -1,12 +1,12 @@
-﻿/*Compare strings
- 
+﻿/*String - Compare strings
+ https://leetcode.com/explore/learn/card/array-and-string/203/introduction-to-string/1158/
  */
 using System;
 namespace Q110ns
 {
-    class Q110
+    class String04_Comapre
     {
-        static void Main110()
+        static void Main04()
         {
             // initialize
             string s1 = "Hello World";
@@ -21,7 +21,7 @@ namespace Q110ns
             Console.WriteLine("s1 and \"Hello World\": " + (s1 == "Hello World"));
             // true since s1 and s2 is the reference of the same object
             Console.WriteLine("s1 and s2: " + (s1 == s2));
-            // false since s3 is refered to another new object
+            // true even s3 is refered to another new object C# supports operator overloading
             Console.WriteLine("s1 and s3: " + (s1 == s3));
             // compare using 'equals'
             Console.WriteLine("Compared by 'equals':");
@@ -33,13 +33,6 @@ namespace Q110ns
             Console.WriteLine("s1 and \"Hello World\": " + (s1.CompareTo("Hello World") == 0));
             Console.WriteLine("s1 and s2: " + (s1.CompareTo(s2) == 0));
             Console.WriteLine("s1 and s3: " + (s1.CompareTo(s3) == 0));
-
-            //string object is immutable in C#
-            /*
-            string s4 = "Hello World";
-            s4[5] = ',';
-            Console.WriteLine(s1);
-            */
         }
     }
 }

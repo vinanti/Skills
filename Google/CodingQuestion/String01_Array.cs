@@ -1,20 +1,8 @@
-﻿/*Operations in Array
+﻿/*Array
 https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1143/
-        // 1. Initialize
-        // 2. Get Length
-        // 3. Access Element
-        // 4. Iterate all Elements
-        // 5. Modify Element
-        // 6. Sort
-
-Error:
-1. Missed System directive
-2. Spell mistake WriteLine, L capital
-3. secolon missed after initializing array
-4. semicolan missed after Console.WriteLine
 */
 using System;
-class String001
+class String01_Array
 {
     static void Main001()
     {
@@ -50,5 +38,8 @@ class String001
         {
             Console.WriteLine(a);
         }
+
+        //7. Index of element in ArrayList
+        Array.IndexOf(array, 3);  //1
     }
 }
