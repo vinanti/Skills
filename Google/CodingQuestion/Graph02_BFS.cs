@@ -7,19 +7,6 @@ using System.Collections.Generic;
 
 namespace Graph_BFS
 {
-    class Program
-    {
-        static void Main001()
-        {
-            Graph g = new Graph(7);
-            g.AddEdge(1, 2);
-            g.AddEdge(1, 3);
-            g.AddEdge(3, 4);
-            g.AddEdge(3, 5);
-            g.AddEdge(4, 6);
-            g.BFS(1);
-        }
-    }
     public class Graph
     {
         private int V = 0;
@@ -41,8 +28,7 @@ namespace Graph_BFS
 
         public void BFS(int s)
         {
-            //this is for vertex visited
-            //so that we do not go in a loop
+            //this is for vertex visited so that we do not go in a loop
             bool[] visited = new bool[V];
 
             //queue for which the adjacent vertex
@@ -64,11 +50,23 @@ namespace Graph_BFS
                     if (!visited[next])
                     {
                         visited[next] = true;
-                        //add to the queue
-                        queue.Enqueue(next);
+                        queue.Enqueue(next); //add to the queue
                     }
                 }
             }
+        }
+    }
+    class Program
+    {
+        static void Main001()
+        {
+            Graph g = new Graph(7);
+            g.AddEdge(1, 2);
+            g.AddEdge(1, 3);
+            g.AddEdge(3, 4);
+            g.AddEdge(3, 5);
+            g.AddEdge(4, 6);
+            g.BFS(1);
         }
     }
 }

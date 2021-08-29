@@ -5,10 +5,10 @@ using System;
 using System.Collections;
 class String02_DynamicArray
 {
-    static void Main002()
+    static void Main02()
     {
         // 1. initialize
-        ArrayList arrayList0 = new ArrayList();
+        ArrayList arrayList0 = new ArrayList() { 1, 2 };
         ArrayList arrayList1;  // v1 == null
 
         // 2. cast an array to a vector

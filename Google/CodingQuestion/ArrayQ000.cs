@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CodingQuestion
 {
-    class Array001
+    class ArrayQ000
     {
         static void Main001()
         {
