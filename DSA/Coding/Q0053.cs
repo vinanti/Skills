@@ -1,7 +1,7 @@
 ﻿using System;
 class Q0053
 {
-    static void Main()
+    static void Main53()
     {
 
     }
