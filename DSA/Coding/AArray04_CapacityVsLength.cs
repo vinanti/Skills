@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Coding_Array04_CapacityVsLength
+namespace Coding_Array04
 {
-    class Array04_CapacityVsLength
+    class AArray04_CapacityVsLength
     {
         static void Main04()
         {

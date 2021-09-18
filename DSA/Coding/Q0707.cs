@@ -4,7 +4,7 @@ namespace Coding
 {
     class Q0707
     {
-        static void Main()
+        static void Main707()
         {
             MyLinkedList myLinkedList = new MyLinkedList();
             myLinkedList.AddAtHead(1);

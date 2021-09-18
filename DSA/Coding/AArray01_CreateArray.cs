@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coding_Array01_CreateArray
+namespace Coding_Array01
 {
     class AArray01_CreateArray
     {
@@ -11,7 +11,6 @@ namespace Coding_Array01_CreateArray
 
         }
     }
-
 
     // A simple definition for a DVD.
     public class DVD

@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AString02
 {
     // "static void main" must be defined in a public class.
     public class AString02_DynamicArrayOperations

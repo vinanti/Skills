@@ -5,7 +5,7 @@ namespace Coding_AString01_ArrayOperations
     class AString01_ArrayOperations
     {
         // "static void main" must be defined in a public class.
-        public static void Main01()
+        static void Main()
         {
             // 1. Initialize
             int[] a0 = new int[5];
@@ -15,13 +15,13 @@ namespace Coding_AString01_ArrayOperations
             // 3. Access Element
             Console.WriteLine("The first element is: " + a1[0]);
             // 4. Iterate all Elements
-            Console.WriteLine("[Version 1] The contents of a1 are:");
+            Console.WriteLine("[Version 1: for loop] The contents of a1 are:");
             for (int i = 0; i < a1.Length; ++i)
             {
                 Console.WriteLine(" " + a1[i]);
             }
             Console.WriteLine();
-            Console.WriteLine("[Version 2] The contents of a1 are:");
+            Console.WriteLine("[Version 2: for each] The contents of a1 are:");
             foreach (int item in a1)
             {
                 Console.WriteLine(" " + item);

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coding_Array03_AccessElementsInLoop
+namespace Coding_Array03
 {
     class AArray03_AccessElementsInLoop
     {

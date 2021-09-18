@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coding_Array02_AccessElements1
+namespace Coding_Array02
 {
     class AArray02_AccessElements
     {
@@ -50,11 +50,11 @@ namespace Coding_Array02_AccessElements1
         public int releaseYear;
         public string director;
 
-        public DVD(string name, int releaseYear, string director)
+        public DVD(string namePara, int releaseYearPara, string directorPara)
         {
-            this.name = name;
-            this.releaseYear = releaseYear;
-            this.director = director;
+            this.name = namePara;
+            this.releaseYear = releaseYearPara;
+            this.director = directorPara;
         }
 
         public string ConvertToString()
