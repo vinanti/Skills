@@ -10,7 +10,7 @@ class Q0217
     static bool ContainsDuplicate(int[] nums)
     {
         HashSet<int> hashSet = new HashSet<int>();
-        foreach (int n in nums)
+        foreach(int n in nums)
             if (!hashSet.Contains(n)) hashSet.Add(n);
             else return true;
         return false;

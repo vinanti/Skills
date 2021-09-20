@@ -5,7 +5,7 @@ namespace Coding_AString01_ArrayOperations
     class AString01_ArrayOperations
     {
         // "static void main" must be defined in a public class.
-        static void Main()
+        static void Main01()
         {
             // 1. Initialize
             int[] a0 = new int[5];
