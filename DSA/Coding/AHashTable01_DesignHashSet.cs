@@ -12,7 +12,7 @@ namespace HashTable01
             * MyHashSet obj = new MyHashSet();
             * obj.add(key);
             * obj.remove(key);
-            * boolean param_3 = obj.contains(key);
+            * bool param_3 = obj.contains(key);
             */
             MyHashSet myHashSet = new MyHashSet();
             myHashSet.Add(1);      // set = [1]

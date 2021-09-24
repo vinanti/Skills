@@ -4,7 +4,7 @@ namespace Coding
 {
     class Q0003
     {
-        static void Main()
+        static void Main3()
         {
             LengthOfLongestSubstring("au"); //3
         }
@@ -90,7 +90,7 @@ namespace Coding
                 char r = s[right];
 
                 int index = chars[r];
-                if (index != null && index >= left && index < right)
+                if (index >= left && index < right)
                 {
                     left = index + 1;
                 }
