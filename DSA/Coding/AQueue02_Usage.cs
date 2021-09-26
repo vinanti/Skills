@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AQueue02
 {
     class AQueue02_Usage
     {

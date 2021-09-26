@@ -9,7 +9,7 @@ Approch
 
 using System;
 using System.Collections.Generic;
-namespace Coding
+namespace Coding_Q0001
 {
     class Q0001
     {

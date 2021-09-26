@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_Q0448
 {
     class Q0448
     {

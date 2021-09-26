@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coding
+namespace Coding_AString07
 {
     class AString07_ImmutableStringSolution
     {

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AQueue01
 {
     class AQueue01_DesignQueue
     {

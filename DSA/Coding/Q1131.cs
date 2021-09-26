@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coding
+namespace Coding_Q1131
 {
     class Q1131
     {

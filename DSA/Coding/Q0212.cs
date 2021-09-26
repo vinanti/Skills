@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_Q0212
 {
     class Q0212
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Coding
+namespace Coding_Q0049
 {
     class Q0049
     {

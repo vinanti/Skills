@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace Coding
+namespace Coding_Q0498
 {
     class Q0498
     {

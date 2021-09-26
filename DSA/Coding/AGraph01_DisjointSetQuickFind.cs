@@ -1,5 +1,6 @@
-﻿using System;
-namespace Coding_AGraph02_UnionFindQuickUnion
+﻿//https://leetcode.com/explore/learn/card/graph/618/disjoint-set/3878/
+using System;
+namespace Coding_AGraph01_UnionFindQuickFind
 {
     class UnionFind
     {
@@ -16,17 +17,21 @@ namespace Coding_AGraph02_UnionFindQuickUnion
 
         public int Find(int x)
         {
-            while (x != root[x])
-                x = root[x];
-            return x;
+            return root[x];
         }
 
         public void Union(int x, int y)
         {
             int rootX = Find(x);
             int rootY = Find(y);
-            if (rootX != rootY)
-                root[rootY] = rootX;
+            if(rootX != rootY)
+            {
+                for (int i = 0; i < root.Length; i++)
+                {
+                    if (root[i] == rootY)
+                        root[i] = rootX;
+                }
+            }
         }
 
         public bool Connected(int x, int y)
@@ -37,7 +42,7 @@ namespace Coding_AGraph02_UnionFindQuickUnion
 
     public class App
     {
-        static void Main02()
+        static void Main01()
         {
             UnionFind uf = new UnionFind(10);
             // 1-2-5-6-7 3-8-9 4

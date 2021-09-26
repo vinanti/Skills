@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AStack01
 {
     class AStack01_DesignStack
     {

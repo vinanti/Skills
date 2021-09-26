@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coding
+namespace Coding_AString04
 {
     class AString04_Compare
     {

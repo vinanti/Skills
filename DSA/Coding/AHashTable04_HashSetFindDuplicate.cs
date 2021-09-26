@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AHashTable04
 {
     class AHashTable04_HashSetFindDuplicate
     {

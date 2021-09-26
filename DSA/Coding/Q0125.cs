@@ -3,7 +3,7 @@
 /*Valid Palindrome*/
 
 using System;
-namespace Coding
+namespace Coding_Q0125
 {
     class Solution
     {

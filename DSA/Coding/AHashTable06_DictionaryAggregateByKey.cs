@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AHashTable06
 {
     class AHashTable06_DictionaryAggregateByKey
     {
@@ -13,7 +13,8 @@ namespace Coding
         * Template for using hash map to find duplicates.
         * Replace ReturnType with the actual type of your return value.
         */
-        bool AggregateByKey_hashmap(List<int> keys)
+        bool AggregateByKey_
+            (List<int> keys)
         {
             // Replace Type and InfoType with actual type of your key and value
             Dictionary<int, int> hashmap = new Dictionary<int, int>();

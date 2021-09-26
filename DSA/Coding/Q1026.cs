@@ -6,7 +6,7 @@ namespace Coding_Q1026
 {
     class Q1026
     {
-        static void Main()
+        static void Main1026()
         {
             //TreeNode root = new TreeNode(8, new TreeNode(3, new TreeNode(1), new TreeNode(6, new TreeNode(4), new TreeNode(7))), new TreeNode(10, null, new TreeNode(14, new TreeNode(13))));
             TreeNode root = new TreeNode(1, null, new TreeNode(2, null, new TreeNode(0, new TreeNode(3))));

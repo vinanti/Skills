@@ -1,7 +1,7 @@
 ﻿/*Binary Tree Preorder Traversal*/
 using System;
 using System.Collections.Generic;
-namespace Coding_0144
+namespace Coding_Q0144
 {
     class Q0144
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coding
+namespace Coding_ABinarySearch01
 {
     class ABinarySearch01_TemplateI
     {

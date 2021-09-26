@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Coding
+namespace Coding_Q0402
 {
     class Q0402
     {

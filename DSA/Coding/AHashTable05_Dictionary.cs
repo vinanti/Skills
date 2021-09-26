@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AHashTable05
 {
     class AHashTable05_Dictionary
     {

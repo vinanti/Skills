@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Coding
+namespace Coding_Q0647
 {
     class Q0647
     {

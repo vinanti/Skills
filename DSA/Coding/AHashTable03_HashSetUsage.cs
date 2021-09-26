@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AHashTable03
 {
     class AHashTable03_HashSetUsage
     {
@@ -14,6 +14,7 @@ namespace Coding
             hashSet.Add(3);
             hashSet.Add(2);
             hashSet.Add(1);
+
 
             // 3. remove the key
             hashSet.Remove(2);

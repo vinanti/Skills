@@ -1,7 +1,7 @@
 ﻿/*Replace Elements with Greatest Element on Right Side*/
 using System;
 
-namespace Coding
+namespace Coding_Q1299
 {
     class Q1299
     {

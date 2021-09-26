@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding
+namespace Coding_AHashTable06
 {
     class AHashTable06_DictionaryFindDuplicate
     {
