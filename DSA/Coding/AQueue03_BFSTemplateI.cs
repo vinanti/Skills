@@ -15,7 +15,7 @@ namespace Coding_AQueue03
     }
     class AQueue03_BFSTemplateI
     {
-        static void Main()
+        static void Main03()
         {
             Node root =
                 new Node('A', new List<Node>() {
@@ -42,7 +42,7 @@ namespace Coding_AQueue03
                 int size = queue.Count;
                 for (int i = 0; i < size; ++i)
                 {
-                    Node cur = queue.Dequeue(); //the first node in queue;
+                    Node cur = queue.Peek(); //the first node in queue;
                     //return step if cur is target;
                     if (cur.val == target.val) return step;
 
@@ -53,7 +53,7 @@ namespace Coding_AQueue03
                             queue.Enqueue(next);
                         }
                     //remove the first node from queue;
-
+                    queue.Dequeue();
                 }
             }
             return -1;          // there is no path from root to target

@@ -1,5 +1,6 @@
 ﻿//https://leetcode.com/explore/learn/card/graph/618/disjoint-set/3878/
 using System;
+
 namespace Coding_AGraph01_UnionFindQuickFind
 {
     class UnionFind

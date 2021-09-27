@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+
 namespace HashTable01
 {
     class AHashTable01_DesignHashSet
