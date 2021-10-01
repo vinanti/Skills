@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Coding_AHashTable05
 {
-    class AHashTable05_Dictionary
+    class AHashTable05_
+
     {
         // "static void main" must be defined in a public class.
         public static void Main05()
@@ -28,7 +29,7 @@ namespace Coding_AHashTable05
 
             // 5. delete a key
             dictionary.Remove(2);
-
+            
             // 6. check if a key is in the hash map
             if (!dictionary.ContainsKey(2))
             {

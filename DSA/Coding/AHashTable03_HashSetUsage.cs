@@ -15,7 +15,7 @@ namespace Coding_AHashTable03
             hashSet.Add(2);
             hashSet.Add(1);
 
-
+            
             // 3. remove the key
             hashSet.Remove(2);
 

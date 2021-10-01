@@ -5,7 +5,7 @@ namespace Coding_ATries01
 {
     class ATries01_ImplementTrie
     {
-        static void Main()
+        static void Main01()
         {
             Trie trie = new Trie();
             trie.Insert("apple");
