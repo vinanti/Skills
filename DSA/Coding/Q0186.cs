@@ -4,7 +4,7 @@ namespace Coding_Q0186
 {
     public class Q0186
     {
-        static void Main()
+        static void Main186()
         {
             ReverseWords(new char[] { 't', 'h', 'e', ' ', 's', 'k', 'y', ' ', 'i', 's', ' ', 'b', 'l', 'u', 'e' });
         }

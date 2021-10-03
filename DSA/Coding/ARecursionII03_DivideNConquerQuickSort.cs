@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Coding
 {
-    public class ARecursionII02_DivideNConquerQuickSort
+    public class ARecursionII03_DivideNConquerQuickSort
     {
         static void Main02()
         {

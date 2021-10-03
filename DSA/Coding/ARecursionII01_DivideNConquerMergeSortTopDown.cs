@@ -2,7 +2,7 @@
 
 namespace Coding_ARecursionII01
 {
-    public class ARecursionII01_DivideNConquerMergeSort
+    public class ARecursionII01_DivideNConquerMergeSortTopDown
     {
         static void Main01()
         {
