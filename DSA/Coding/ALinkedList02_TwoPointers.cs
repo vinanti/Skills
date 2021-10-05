@@ -12,7 +12,7 @@ namespace Coding_ALinkedList02
     class ALinkedList02_TwoPointers
     {
         private ListNode head;
-        static void Main()
+        static void Main02()
         {
 
         }
