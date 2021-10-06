@@ -112,7 +112,7 @@ namespace Coding_ALinkedList01_SinglyLinkedList
         }
     }
 
-    class ALinkedList01_SinglyLinkedList
+    class Design_SinglyLinkedList
     {
         static void Main01()
         {

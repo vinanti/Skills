@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_AHashTable03
 {
-    class AHashTable03_HashSetUsage
+    class Usage_HashSet
     {
         public static void Main03()
         {
@@ -35,14 +35,27 @@ namespace Coding_AHashTable03
             }
             Console.WriteLine("are in the hash set.");
 
+            //Can't apply indexing to stack
+            //for (int s = 0; s < hashSet.Count; s++)
+            //    Console.WriteLine(hashSet[s] + " ");
+
             // 7. clear the hash set
-            hashSet.Clear();
+            //hashSet.Clear();
 
             // 8. check if the hash set is empty
             if (hashSet.Count == 0)
             {
                 Console.WriteLine("hash set is empty now!");
             }
+
+            //9. Copy elements to array
+            int[] array = new int[10];
+            hashSet.CopyTo(array, 3);
+
+            //10. Check if equal
+            HashSet<int> hashSet2 = new HashSet<int>();
+            hashSet.Equals(hashSet2);
+
         }
     }
 }

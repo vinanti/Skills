@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_ATries01
 {
-    class ATries01_DesignTrie
+    class Design_Trie
     {
         static void Main01()
         {

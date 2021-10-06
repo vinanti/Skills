@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Array Capacity VS Length
+using System;
 
 namespace Coding_Array04
 {

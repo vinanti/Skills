@@ -7,7 +7,7 @@ namespace Coding_AHashTable05
 
     {
         // "static void main" must be defined in a public class.
-        public static void Main05()
+        public static void Main01()
         {
             // 1. initialize a hash map
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
@@ -22,6 +22,8 @@ namespace Coding_AHashTable05
             if (!dictionary.ContainsKey(1))
                 dictionary.Add(1,1);
             if (dictionary.ContainsKey(1))
+                dictionary[1] = 2;
+            if (dictionary.ContainsValue(2))
                 dictionary[1] = 2;
 
             // 4. get the value of specific key
@@ -41,19 +43,27 @@ namespace Coding_AHashTable05
 
             // 8. iterate the hash map
             foreach(KeyValuePair<int, int> pair in dictionary)
-            {
                 Console.WriteLine("(" + pair.Key + "," + pair.Value + ") ");
-            }
+
             Console.WriteLine("are in the hash map.");
 
             // 9. clear the hash map
-            dictionary.Clear();
+            //dictionary.Clear();
 
             // 10. check if the hash map is empty
             if (dictionary.Count == 0)
             {
                 Console.WriteLine("hash map is empty now!");
             }
+
+            //11. Check if equal
+            Dictionary<int, int> dictionary2 = new Dictionary<int, int>();
+            dictionary.Equals(dictionary2);
+
+            int x = dictionary.GetValueOrDefault(1);
+            int y = dictionary.GetValueOrDefault(10);
+
+            
         }
     }
 }

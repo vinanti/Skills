@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Writing/Reading items of Array with a loop
+using System;
 
 namespace Coding_Array03
 {

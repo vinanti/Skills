@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Creating an Array
+using System;
 
 namespace Coding_Array01
 {

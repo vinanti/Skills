@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_AHashTable04
 {
-    class AHashTable04_HashSetFindDuplicate
+    class Prob_HashSet_FindDuplicate
     {
         static void Main04()
         {

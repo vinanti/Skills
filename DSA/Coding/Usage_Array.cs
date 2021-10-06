@@ -2,7 +2,7 @@
 
 namespace Coding_AString01_ArrayOperations
 {
-    class AString01_ArrayOperations
+    class Usage_Array
     {
         // "static void main" must be defined in a public class.
         static void Main01()
@@ -31,6 +31,14 @@ namespace Coding_AString01_ArrayOperations
             a1[0] = 4;
             // 6. Sort
             Array.Sort(a1);
+
+            //7. Copy elements to array
+            int[] a3 = new int[50];
+            a1.CopyTo(a3, 1);
+
+            //8. Check if equal
+            a1.Equals(a3);
+
         }
     }
 }

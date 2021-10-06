@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Accessing Elements in Arrays
+using System;
 
 namespace Coding_Array02
 {

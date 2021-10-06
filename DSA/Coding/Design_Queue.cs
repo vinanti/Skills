@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Coding_AQueue01
 {
-    class AQueue01_DesignQueue
+    class Design_Queue
     {
         static void Main01()
         {

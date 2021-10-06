@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HashTable01
 {
-    class AHashTable01_DesignHashSet
+    class Design_HashSet
     {
         static void Main01()
         {

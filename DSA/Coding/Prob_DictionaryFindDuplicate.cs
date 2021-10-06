@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_AHashTable06
 {
-    class AHashTable06_DictionaryFindDuplicate
+    class Prob_DictionaryFindDuplicate
     {
         static void Main06()
         {

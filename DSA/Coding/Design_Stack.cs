@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_AStack01
 {
-    class AStack01_DesignStack
+    class Design_Stack
     {
         static void Main01()
         {
