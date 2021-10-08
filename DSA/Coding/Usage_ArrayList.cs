@@ -4,9 +4,9 @@ using System.Collections;
 namespace Coding_AString02
 {
     // "static void main" must be defined in a public class.
-    public class AString02_DynamicArrayOperations
+    public class Usage_ArrayList
     {
-        static void Main02()
+        static void Main01()
         {
             // 1. initialize
             ArrayList arrayList0 = new ArrayList() { 1, 2 };
@@ -57,6 +57,15 @@ namespace Coding_AString02
             //10. Index of element in ArrayList
             int index = arrayList1.IndexOf(5);
             Console.WriteLine("Index of 5:" + index);
+
+            //11.Remove all elements
+            //arrayList0.Clear();
+
+            //Check element exists
+            arrayList0.Contains(5);
+
+            int[] array = new int[50];
+            arrayList0.CopyTo(array, 2);
         }
     }
 }

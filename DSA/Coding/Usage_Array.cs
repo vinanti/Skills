@@ -8,37 +8,38 @@ namespace Coding_AString01_ArrayOperations
         static void Main01()
         {
             // 1. Initialize
-            int[] a0 = new int[5];
-            int[] a1 = { 1, 2, 3 };
+            int[] array = new int[5];
+            int[] array1 = { 1, 2, 3 };
             // 2. Get Length
-            Console.WriteLine("The size of a1 is: " + a1.Length);
+            Console.WriteLine("The size of a1 is: " + array1.Length);
             // 3. Access Element
-            Console.WriteLine("The first element is: " + a1[0]);
+            Console.WriteLine("The first element is: " + array1[0]);
             // 4. Iterate all Elements
             Console.WriteLine("[Version 1: for loop] The contents of a1 are:");
-            for (int i = 0; i < a1.Length; ++i)
+            for (int i = 0; i < array1.Length; ++i)
             {
-                Console.WriteLine(" " + a1[i]);
+                Console.WriteLine(" " + array1[i]);
             }
             Console.WriteLine();
             Console.WriteLine("[Version 2: for each] The contents of a1 are:");
-            foreach (int item in a1)
+            foreach (int item in array1)
             {
                 Console.WriteLine(" " + item);
             }
             Console.WriteLine();
             // 5. Modify Element
-            a1[0] = 4;
+            array1[0] = 4;
             // 6. Sort
-            Array.Sort(a1);
+            Array.Sort(array1);
 
             //7. Copy elements to array
             int[] a3 = new int[50];
-            a1.CopyTo(a3, 1);
+            array1.CopyTo(a3, 1);
 
             //8. Check if equal
-            a1.Equals(a3);
+            array1.Equals(a3);
 
+            
         }
     }
 }

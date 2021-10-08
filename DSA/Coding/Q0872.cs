@@ -22,7 +22,7 @@ namespace Coding_Q0872
         {
             TreeNode root1 = new TreeNode(1,
                 new TreeNode(2), new TreeNode(3));
-\            TreeNode root2 = new TreeNode(1,
+            TreeNode root2 = new TreeNode(1,
                 new TreeNode(3), new TreeNode(2));
             bool result =  LeafSimilar(root1, root2);
         }

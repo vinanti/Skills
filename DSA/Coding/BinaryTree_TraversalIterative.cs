@@ -108,7 +108,6 @@ namespace Coding_ABinaryTree02
                 {
                     s.Push(cur.left);           // push left child to stack if it is not null
                 }
-                
             }
             return answer;
         }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Coding_ANaryTree01
+namespace Coding_ANaryTree02
 {
     // Definition for a Node.
     class Node
@@ -17,18 +17,18 @@ namespace Coding_ANaryTree01
             children = _children;
         }
     };
-    class ANaryTree01_TraversalPreorder
+    class NaryTree_TraversalPostOrder
     {
-        static void Main01()
+        static void Main02()
         {
             Node root = new Node(1,
                 new List<Node>() {
                     new Node(3, new List<Node>() { new Node(5),new Node(6) }),
                     new Node(2, new List<Node>() { }),
                     new Node(4, new List<Node>() { })});
-            Preorder(root);
+            Postorder(root);
         }
-        public static List<int> Preorder(Node root)
+        public static List<int> Postorder(Node root)
         {
             Stack<Node> stack = new Stack<Node>();
             List<int> output = new List<int>();
@@ -38,19 +38,22 @@ namespace Coding_ANaryTree01
             }
 
             stack.Push(root);
-            while (stack.Count>0)
+            while (stack.Count > 0)
             {
                 Node node = stack.Pop();
                 output.Add(node.val);
-                if(node.children != null)
+                if (node.children != null)
                 {
-                    node.children.Reverse();
                     foreach (Node item in node.children)
                     {
-                        stack.Push(item);
+                        if (item != null)
+                        {
+                            stack.Push(item);
+                        }
                     }
                 }
             }
+            output.Reverse();
             return output;
         }
     }

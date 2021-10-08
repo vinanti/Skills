@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Coding_ABinaryTree03
 {
-    class ABinaryTree03_LevelTraversal
+    class BinaryTree_TraversalLevelOrder
     {
         static void Main03()
         {

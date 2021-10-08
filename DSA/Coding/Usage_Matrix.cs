@@ -2,25 +2,25 @@
 
 namespace Coding_AString03
 {
-    class AString03_2DArray
+    class Usage_Matrix
     {
         // "static void main" must be defined in a public class.
         private static void PrintArray(int[][] a)
         {
             for (int i = 0; i < a.Length; ++i)
             {
-                Console.WriteLine(a[i]);
+                Console.WriteLine("Row: " + i);
             }
             for (int i = 0; i < a.Length; ++i)
             {
                 for (int j = 0; a[i] != null && j < a[i].Length; ++j)
                 {
-                    Console.Write(a[i][j] + " ");
+                    Console.Write(i + "" + j + " ");
                 }
                 Console.WriteLine();
             }
         }
-        static void Main02()
+        static void Main()
         {
             Console.WriteLine("Example I:");
             int[][] a = new int[2][];
@@ -34,6 +34,20 @@ namespace Coding_AString03
             b[0] = new int[3];
             b[1] = new int[5];
             PrintArray(b);
+                
+            bool equal = a.Equals(b);
+            int[] arr = new int[50];
+
+            int[][] matrix = new int[2][];
+            matrix[0] = new int[2];
+            matrix[1] = new int[2];
+            int k = 1;
+            for (int i = 0; i < matrix.Length; i++)
+                for (int j = 0; j < matrix[0].Length; j++)
+                { matrix[i][j] = k; k++; }
+            matrix[0][0] = 10;
+   
+            
         }
     }
 }

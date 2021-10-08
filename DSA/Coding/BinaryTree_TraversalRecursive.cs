@@ -23,7 +23,13 @@ namespace Coding_ABinaryTree01
             PreorderTraversal(node);
             InorderTraversal(node);
             postorderTraversal(node);
-            
+        }
+
+        public static List<int> PreorderTraversal(TreeNode root)
+        {
+            List<int> answer = new List<int>();
+            PreorderTraversal(root, answer);
+            return answer;
         }
         private static void PreorderTraversal(TreeNode root, List<int> answer)
         {
@@ -35,13 +41,12 @@ namespace Coding_ABinaryTree01
             PreorderTraversal(root.left, answer);   // traverse left subtree
             PreorderTraversal(root.right, answer);  // traverse right subtree
         }
-        public static List<int> PreorderTraversal(TreeNode root)
+        public static List<int> InorderTraversal(TreeNode root)
         {
             List<int> answer = new List<int>();
-            PreorderTraversal(root, answer);
+            InorderTraversal(root, answer);
             return answer;
         }
-
         private static void InorderTraversal(TreeNode root, List<int> answer)
         {
             if (root == null)
@@ -52,10 +57,10 @@ namespace Coding_ABinaryTree01
             answer.Add(root.val);                  // visit the root
             InorderTraversal(root.right, answer);  // traverse right subtree
         }
-        public static List<int> InorderTraversal(TreeNode root)
+        public static List<int> postorderTraversal(TreeNode root)
         {
             List<int> answer = new List<int>();
-            InorderTraversal(root, answer);
+            PostorderTraversal(root, answer);
             return answer;
         }
         private static void PostorderTraversal(TreeNode root, List<int> answer)
@@ -68,12 +73,5 @@ namespace Coding_ABinaryTree01
             PostorderTraversal(root.right, answer);  // traverse right subtree
             answer.Add(root.val);                    // visit the root
         }
-        public static List<int> postorderTraversal(TreeNode root)
-        {
-            List<int> answer = new List<int>();
-            PostorderTraversal(root, answer);
-            return answer;
-        }
-
     }
 }

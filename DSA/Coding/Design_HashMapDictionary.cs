@@ -1,6 +1,6 @@
 ﻿//TODO: Design Hash Map
 
-public class Solution
+public class Solution123
 {
     public string ReverseWords(string s)
     {
