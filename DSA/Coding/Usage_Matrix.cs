@@ -4,7 +4,7 @@ namespace Coding_AString03
 {
     class Usage_Matrix
     {
-        // "static void main" must be defined in a public class.
+        
         private static void PrintArray(int[][] a)
         {
             for (int i = 0; i < a.Length; ++i)
@@ -20,7 +20,7 @@ namespace Coding_AString03
                 Console.WriteLine();
             }
         }
-        static void Main()
+        static void Main10()
         {
             Console.WriteLine("Example I:");
             int[][] a = new int[2][];

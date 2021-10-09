@@ -5,7 +5,7 @@ namespace Coding_AString07
 {
     class AString07_ImmutableStringSolution
     {
-        // "static void main" must be defined in a public class.
+        
         public static void Main07()
         {
             string s = "Hello World";

@@ -4,7 +4,7 @@ namespace Coding_AString05
 {
     class AString05_Immutable
     {
-        // "static void main" must be defined in a public class.
+        
         public static void Main05()
         {
             string s1 = "Hello World";

@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Coding_AString02
 {
-    // "static void main" must be defined in a public class.
+    
     public class Usage_ArrayList
     {
         static void Main01()

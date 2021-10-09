@@ -6,7 +6,7 @@ namespace Coding_AHashTable05
     class AHashTable05_
 
     {
-        // "static void main" must be defined in a public class.
+        
         public static void Main01()
         {
             // 1. initialize a hash map
