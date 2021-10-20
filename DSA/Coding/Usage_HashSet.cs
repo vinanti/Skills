@@ -7,54 +7,55 @@ namespace Coding_AHashTable03
     {
         public static void Main03()
         {
-            // 1. initialize the hash set
+            //1.Initialize
             HashSet<int> hashSet = new HashSet<int>();
 
-            // 2. add a new key
+            //2.Size
+            Console.WriteLine("The size of has set is: " + hashSet.Count);
+
+            //3.Access 1st element
+            //NA
+            //Elements can be access only with iteration
+
+            //4.Add element
             hashSet.Add(3);
             hashSet.Add(2);
             hashSet.Add(1);
 
-            
-            // 3. remove the key
+            //5.Modify element
+            //NA
+            //Cant modify existing elemt, needs to delete and then add new
+
+            //6.Remove element
             hashSet.Remove(2);
 
-            // 4. check if the key is in the hash set
+            //7.Remove all elements
+            //hashSet.Clear();
+
+            //8.Check if element exists
             if (!hashSet.Contains(2))
-            {
                 Console.WriteLine("Key 2 is not in the hash set.");
-            }
 
-            // 5. get the size of the hash set
-            Console.WriteLine("The size of has set is: " + hashSet.Count);
+            //9.Index of element
+            //NA
 
-            // 6. iterate the hash set
-            foreach(int i in hashSet)
-            {
+            //10.Iterate elements
+            foreach (int i in hashSet)
                 Console.Write(i + " ");
-            }
-            Console.WriteLine("are in the hash set.");
 
             //Can't apply indexing to stack
             //for (int s = 0; s < hashSet.Count; s++)
             //    Console.WriteLine(hashSet[s] + " ");
 
-            // 7. clear the hash set
-            //hashSet.Clear();
+            //11.Convert to array
+            //NA
 
-            // 8. check if the hash set is empty
-            if (hashSet.Count == 0)
-            {
-                Console.WriteLine("hash set is empty now!");
-            }
-
-            //9. Copy elements to array
+            //12.Copy elements to array
             int[] array = new int[10];
             hashSet.CopyTo(array, 3);
 
-            //10. Check if equal
-            HashSet<int> hashSet2 = new HashSet<int>();
-            hashSet.Equals(hashSet2);
+            //13.Sort
+            //NA      
 
         }
     }

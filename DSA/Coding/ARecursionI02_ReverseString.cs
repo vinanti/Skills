@@ -6,7 +6,7 @@ namespace Coding_ARecursionI02
     {
         class Solution
         {
-            static void Main03()
+            static void Main02()
             {
                 ReverseString(new char[] { 'a', 'b', 'c' });
             }

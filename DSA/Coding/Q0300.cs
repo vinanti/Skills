@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Coding
 {
@@ -10,27 +11,28 @@ namespace Coding
         }
         public static int LengthOfLIS(int[] nums)
         {
-            int[] dp = new int[nums.Length];
-            Array.Fill(dp, 1);
-
-            for (int i = 1; i < nums.Length; i++)
+            List<List<int>> list = new List<List<int>>();
+            foreach (int n in nums)
             {
-                for (int j = 0; j < i; j++)
+                List<int> current = new List<int>() { n };
+                if (!list.Contains(current)) list.Add(current);
+                List<List<int>> currentList = new List<List<int>>(list);
+                foreach (List<int> innerList in currentList)
                 {
-                    if (nums[i] > nums[j])
+                    if (innerList[innerList.Count - 1] < n)
                     {
-                        dp[i] = Math.Max(dp[i], dp[j] + 1);
+                        current = new List<int>(innerList);
+                        current.Add(n);
+                        if (!list.Contains(current)) list.Add(current);
                     }
                 }
             }
-
-            int longest = 0;
-            foreach(int c in dp)
+            int length = 0;
+            foreach (List<int> innerList in list)
             {
-                longest = Math.Max(longest, c);
+                length = Math.Max(length, innerList.Count);
             }
-
-            return longest;
+            return length;
         }
     }
 }

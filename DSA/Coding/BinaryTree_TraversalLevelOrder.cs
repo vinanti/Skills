@@ -5,7 +5,7 @@ namespace Coding_ABinaryTree03
 {
     class BinaryTree_TraversalLevelOrder
     {
-        static void Main()
+        static void Main01()
         {
             TreeNode root = new TreeNode(3);
             root.left = new TreeNode(9);

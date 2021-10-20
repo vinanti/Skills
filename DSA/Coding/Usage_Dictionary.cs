@@ -3,67 +3,64 @@ using System.Collections.Generic;
 
 namespace Coding_AHashTable05
 {
-    class AHashTable05_
-
+    class AHashTable05
     {
-        
         public static void Main01()
         {
-            // 1. initialize a hash map
+
+            //1.Initialize
             Dictionary<int, int> dictionary = new Dictionary<int, int>();
 
-            // 2. insert a new (key, value) pair
-            if(!dictionary.ContainsKey(0))
+            //2.Size
+            Console.WriteLine("The size of hash map is: " + dictionary.Count);
+
+            //3.Access 1st element
+            dictionary.Add(1, 10);
+            int x = dictionary.GetValueOrDefault(1);
+            x = dictionary[1];
+
+            //4.Add element
+            if (!dictionary.ContainsKey(0))
                 dictionary.Add(0, 0);
             if (!dictionary.ContainsKey(2))
                 dictionary.Add(2, 3);
 
-            // 3. insert a new (key, value) pair or update the value of existed key
+            //5.Modify element
             if (!dictionary.ContainsKey(1))
-                dictionary.Add(1,1);
+                dictionary.Add(1, 1);
             if (dictionary.ContainsKey(1))
                 dictionary[1] = 2;
             if (dictionary.ContainsValue(2))
                 dictionary[1] = 2;
 
-            // 4. get the value of specific key
-            Console.WriteLine("The value of key 1 is: " + dictionary[1]);
+            //6.Remove element
+            dictionary.Remove(1);
 
-            // 5. delete a key
-            dictionary.Remove(2);
-            
-            // 6. check if a key is in the hash map
-            if (!dictionary.ContainsKey(2))
-            {
-                Console.WriteLine("Key 2 is not in the hash map.");
-            }
-
-            // 7. get the size of the hash map
-            Console.WriteLine("The size of hash map is: " + dictionary.Count);
-
-            // 8. iterate the hash map
-            foreach(KeyValuePair<int, int> pair in dictionary)
-                Console.WriteLine("(" + pair.Key + "," + pair.Value + ") ");
-
-            Console.WriteLine("are in the hash map.");
-
-            // 9. clear the hash map
+            //7.Remove all elements
             //dictionary.Clear();
 
-            // 10. check if the hash map is empty
-            if (dictionary.Count == 0)
-            {
-                Console.WriteLine("hash map is empty now!");
-            }
+            //8.Check if element exists
+            if (!dictionary.ContainsKey(1))
+                Console.WriteLine("Key 2 is not in the hash map.");
+            if (!dictionary.ContainsValue(2))
+                Console.WriteLine("Key 2 is not in the hash map.");
 
-            //11. Check if equal
-            Dictionary<int, int> dictionary2 = new Dictionary<int, int>();
-            dictionary.Equals(dictionary2);
+            //9.Index of element
+            //NA
 
-            int x = dictionary.GetValueOrDefault(1);
-            int y = dictionary.GetValueOrDefault(10);
+            //10.Iterate elements
+            foreach (KeyValuePair<int, int> pair in dictionary)
+                Console.WriteLine("(" + pair.Key + "," + pair.Value + ") ");
 
-            
+            //11.Convert to array
+            //NA
+
+            //12.Copy elements to array
+            //NA
+
+            //13.Sort
+            //NA
+           
         }
     }
 }
