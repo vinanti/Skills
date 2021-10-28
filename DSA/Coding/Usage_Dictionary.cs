@@ -19,6 +19,8 @@ namespace Coding_AHashTable05
             int x = dictionary.GetValueOrDefault(1);
             x = dictionary[1];
 
+            
+
             //4.Add element
             if (!dictionary.ContainsKey(0))
                 dictionary.Add(0, 0);

@@ -7,7 +7,10 @@ namespace Coding_Q0054
     {
         static void Main54()
         {
-            SpiralOrder(new int[][] { new int[] { 1, 2, 3, 4 }, new int[] { 5, 6, 7, 8 }, new int[] { 9, 10, 11, 12 } });
+            SpiralOrder(new int[][] { 
+                new int[] { 1, 2, 3, 4 }, 
+                new int[] { 5, 6, 7, 8 }, 
+                new int[] { 9, 10, 11, 12 } });
         }
         public static List<int> SpiralOrder(int[][] matrix)
         {

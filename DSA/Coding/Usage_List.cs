@@ -5,7 +5,7 @@ namespace Coding
 {
     class Usage_List
     {
-        static void Main()
+        static void Main01()
         {
             //1.Initialize
             List<int> list = new List<int>();
@@ -55,6 +55,11 @@ namespace Coding
 
             //13.Sort
             list.Sort();
+
+            //Merge 2 lists
+            List<int> list2 = new List<int>();
+            list2.Add(50);
+            list.AddRange(list2);
 
         }
     }
