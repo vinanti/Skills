@@ -5,7 +5,7 @@ namespace Coding
 {
     class Q0224
     {
-        static void Main()
+        static void Main12()
         {
             Calculate("(1+(4+5+2)-3)+(6+8)");
         }
