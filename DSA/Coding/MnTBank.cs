@@ -8,7 +8,7 @@ namespace Coding
 {
     class MnTBank
     {
-        static void Main()
+        static void Main01()
         {
             int a = solution(new int[] { 6, 1, 4, 6, 3, 2, 7, 4 }, 3, 2);
         }
