@@ -5,7 +5,7 @@ namespace Coding
 {
     class Usage_List
     {
-        static void Main()
+        static void Main12()
         {
             //1.Initialize
             List<int> list = new List<int>();
