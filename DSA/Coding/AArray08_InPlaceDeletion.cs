@@ -6,7 +6,7 @@ namespace Coding_AArray08
     {
         static void Main08()
         {
-            RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 }); //5
+            Console.WriteLine(RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 })); //5
             CopyWithRemovedDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 }); //[0, 1, 2, 3, 4]
         }
         public static int RemoveDuplicates(int[] nums)
@@ -69,6 +69,7 @@ namespace Coding_AArray08
                 if (i == 0 || nums[i] != nums[i - 1])
                 {
                     result[positionInResult] = nums[i];
+                    Console.WriteLine(nums[i]);
                     positionInResult++;
                 }
             }

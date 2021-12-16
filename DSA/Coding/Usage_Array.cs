@@ -53,6 +53,8 @@ namespace Coding_AString01_ArrayOperations
             int[] array3 = new int[10];
             array1.CopyTo(array3, 1);
 
+            Array.Copy(array1, 0, array3, 0, 2);
+
             //13.Sort
             Array.Sort(array1);
 

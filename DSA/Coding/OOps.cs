@@ -43,7 +43,7 @@ namespace Coding
     }
     class myOOps 
     {
-        static void Main()
+        static void Main01()
         {
             OOps2 o2 = new OOps2();
             int o = o2.Add();

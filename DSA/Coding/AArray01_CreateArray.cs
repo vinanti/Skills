@@ -9,6 +9,7 @@ namespace Coding_Array01
         {
             // The actual code for creating an Array to hold DVD's.
             DVD[] dvdCollection = new DVD[15];
+            
 
         }
     }

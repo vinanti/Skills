@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Linq;
 namespace Coding_AHashTable05
 {
     class AHashTable05
     {
-        public static void Main01()
+        static void Main01()
         {
 
             //1.Initialize
@@ -18,8 +19,6 @@ namespace Coding_AHashTable05
             dictionary.Add(1, 10);
             int x = dictionary.GetValueOrDefault(1);
             x = dictionary[1];
-
-            
 
             //4.Add element
             if (!dictionary.ContainsKey(0))
@@ -63,6 +62,8 @@ namespace Coding_AHashTable05
             //13.Sort
             //NA
 
+            List<int> keys = dictionary.Keys.ToList();
+            List<int> values = dictionary.Values.ToList();
         }
     }
 }

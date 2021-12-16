@@ -4,7 +4,7 @@ namespace Coding_ARecursionI01
 {
     class ARecursionI01_Principle
     {
-        static void Main01()
+        static void Main()
         {
             PrintReverse(new char[] { 'a', 'b', 'c' });
         }

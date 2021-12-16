@@ -5,7 +5,7 @@ namespace Coding_AQueue02
 {
     class Usage_Queue
     {
-        static void Main02()
+        static void Main01()
         {
             //1.Initialize
             Queue<int> queue = new Queue<int>();
