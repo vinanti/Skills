@@ -1,0 +1,28 @@
+{
+    "articles":[
+        {
+            "id": 1,
+            "title": "Today's React Status",
+            "message": "It was a demo session today",
+            "date": "15/01/2022",
+            "author": "Raghu"
+        
+        },
+        {
+            "id": 2,
+            "title": "Today's Angular Status",
+            "message": "It was a theory session today",
+            "date": "14/01/2022",
+            "author": "Anand"
+        
+        },
+        {
+            "id": 3,
+            "title": "Today's MERN Status",
+            "message": "It was a demo & theory session today",
+            "date": "16/01/2022",
+            "author": "Vikas"
+        
+        }
+    ]
+}
