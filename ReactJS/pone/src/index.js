@@ -1,29 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Homepage from './components/homepage';
-import Loginpage from './components/loginpage';
-import Registerpage from './components/registerpage';
-import reportWebVitals from './reportWebVitals';
+import createSagaMiddleware from 'redux-saga'
+import { createStore, applyMiddleware } from 'redux';
+import { Provider } from 'react-redux';
+import { logger } from 'redux-logger'
+import rootSaga from './sagas'
+import reducer from './reducers'
 import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+const sagaMiddleware = createSagaMiddleware()
+//Object using which we can access all the methods from redux-saga
 
-const myroute = (
-  <BrowserRouter>
-    <div>
-      <Routes>
-        <Route exact path="/" element={<Homepage />} />
-        <Route path="/login" element={<Loginpage />} />
-        <Route path="/register" element={<Registerpage />} />
-        <Route path="/app" element={<App />} />
-      </Routes>
-    </div>
-  </BrowserRouter>
+const mystore = createStore(  //create the store and i am also connecting the
+  //reducer with the Middleware
+  reducer,
+  applyMiddleware(sagaMiddleware, logger) //binding the sagamiddleware and 
+  //the logger into the redux middleware
 )
-
+sagaMiddleware.run(rootSaga)
+//Triggering/Executing the root saga - Async Method
+//Provider is used to Integrate the store with components
 ReactDOM.render(
-  <App />,
+  <Provider store={mystore}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 

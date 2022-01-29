@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace DSAConcepts
+namespace DSAConcepts01
 {
     class Arrays01_CreatingAnArray
     {
-        static void Main()
+        static void Main01()
         {
             // The actual code for creating an Array to hold DVD's.
             DVD[] dvdCollection = new DVD[15];
