@@ -5,20 +5,23 @@ namespace coding_Q0485
 {
     class Q0485
     {
-        static void Main485()
+        static void Main()
         {
             int m = MaxConsecutiveOnes(new int[] { 1, 1, 0, 1, 1, 1 }); //3
         }
         static int MaxConsecutiveOnes(int[] nums)
         {
-            int max = 0, current = 0;
+            int maxConsecutiveOnes = 0, currentConsecutiveOnes = 0;
             foreach (int n in nums)
             {
-                if (n == 1) current++;
-                else current = 0;
-                if (max < current) max = current;
+                if (n == 1) currentConsecutiveOnes++;
+                else
+                {
+                    maxConsecutiveOnes = Math.Max(maxConsecutiveOnes, currentConsecutiveOnes);
+                    currentConsecutiveOnes = 0;
+                }
             }
-            return max;
+            return maxConsecutiveOnes;
         }
     }
 }

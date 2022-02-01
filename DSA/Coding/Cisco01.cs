@@ -8,7 +8,7 @@ namespace Coding
 {
     class Cisco01
     {
-        static void Main()
+        static void Main01()
         {
             int n = 3;
             int[] a = { 1, 2, 3 };
